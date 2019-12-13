@@ -1,0 +1,42 @@
+// REGULAR EXPRESSION READING
+
+//Node
+	Pattern regexNode = Pattern.compile("(<node id=\")(\\p{Alnum}+)(\">)");
+	Matcher matcher = regexNode.matcher(line);
+	while (matcher.find()) {
+		System.out.println(matcher.group(2));
+	}
+  	
+// CLASSIC READING
+
+//Node
+	  String id;
+	  id = line.substring(line.indexOf("<node id=\"") + 10, line.indexOf("\">"));
+	  System.out.print(id + " - ");
+	  //br.readLine(); br.readLine(); // skip 2 lines
+	  
+	  
+// nodes
+		  if (line.contains("<node id=")) {
+			  // number of nodes count here
+			  
+			  String id;
+			  id = line.substring(line.indexOf("<node id=\"") + 10, line.indexOf("\">"));
+			  System.out.print(id + " - ");
+			  br.readLine(); br.readLine(); // skip 2 lines
+		  } else
+//edge
+if (line.contains("<edge source=")) {
+			  // number of edges count here
+			  
+			  String src = line.substring(line.indexOf("<edge source=\"") + 14, line.indexOf("\" target=\""));
+			  String des = line.substring(line.indexOf("\" target=\"") + 10, line.indexOf("\">"));
+			  System.out.println("src=" + src + "\tdes=" + des);
+			  
+			  String tmp = br.readLine();
+			  String e_id = tmp.substring(tmp.indexOf("<data key=\"e_id\">") + 17, tmp.indexOf("</data>"));
+			  tmp = br.readLine();
+			  int weight = Integer.parseInt(tmp.substring(tmp.indexOf("\">") + 2, tmp.indexOf("</")));
+			  System.out.println("e_id=" + e_id + "\tweight=" + weight);
+			  br.readLine(); // skip 1 lines
+		  }
