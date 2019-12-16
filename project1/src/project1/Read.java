@@ -7,7 +7,7 @@ import java.util.regex.*; // for locate information of nodes and edges in graphm
 public class Read { 
   public static void main(String[] args)throws Exception { 
 	  // Path to graphml file
-	  File file = new File("/Users/steven/Yadsendew/Java OOP/Project/small_graph.graphml"); 
+	  File file = new File("./src/large_graph.graphml"); // look in project directory
 	  // Creating buffer to read file
 	  BufferedReader br = new BufferedReader(new FileReader(file)); 
 	  
