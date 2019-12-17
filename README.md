@@ -3,7 +3,8 @@ Java Project
 HOW TO IMPORT PROJECT FROM GITHUB TO ECLIPSE
 
 1. From "File" > "Import..." > then it appears as below picture > select "Projects from Git (with smart import)" > Next
-￼https://github.com/yadsendew/Project1/blob/master/Screen%20Shot%202019-12-17%20at%2000.48.57.png?raw=true
+![](Screen%20Shot%202019-12-17%20at%2000.48.57.png)
+￼https://github.com/yadsendew/Project1/blob/master/
 2. Select "Clone URI" > Next
 ￼
 3. Enter as follow:
