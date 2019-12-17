@@ -1,4 +1,4 @@
-# HOW TO IMPORT PROJECT FROM GITHUB TO ECLIPSE \
+# HOW TO IMPORT PROJECT FROM GITHUB TO ECLIPSE
 
 1. From "File" > "Import..." > then it appears as below picture > select "Projects from Git (with smart import)" > Next \
 ![](/img/Screen%20Shot%202019-12-17%20at%2000.48.57.png)
