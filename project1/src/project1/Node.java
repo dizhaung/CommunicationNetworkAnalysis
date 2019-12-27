@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Node {
 	
-	private String id;
+	public String id;
 	public Map<Node, Edge> neighbors = new HashMap<Node, Edge>();
 	
 	// Default Constructors
