@@ -8,16 +8,20 @@ public class Node {
 	private String id;
 	public Map<Node, Edge> neighbors = new HashMap<Node, Edge>();
 	
-	// Constructors
+	// Default Constructors
 	Node(){
 		id = "";
 		neighbors = new HashMap<>();
 	}
+	// Determined Constructors
 	Node(String newId){
 		id = newId;
-		neighbors = new HashMap<>();
 	}
-	// 
+	Node(String newId, Map<Node, Edge> newNeighbors){
+		id = newId;
+		neighbors = newNeighbors;
+	}
+	
 	public void setId(String newId) {
 		this.id = newId;
 	}
@@ -26,6 +30,8 @@ public class Node {
 		return this.id;
 	}
 	
-	
-	
+	public Map<Node, Edge> getNeighbors(){
+		return this.neighbors;
+	}
+
 }
