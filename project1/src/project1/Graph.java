@@ -24,4 +24,14 @@ public class Graph {
 	public void addEdge(Edge edge){
 		edgeList.put(edge.getId(), edge);
 	}
+	public void printNodeIDs() {
+		for (Node node : nodeList.values()) {
+			System.out.println(node.getId());
+		}
+	}
+	public void printEdgeIDs() {
+		for (Edge edge : edgeList.values()) {
+			System.out.println(edge.getId());
+		}
+	}
 }
