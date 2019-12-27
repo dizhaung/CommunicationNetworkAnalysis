@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Edge {
 
-	private String id;
+	public String id;
 	public String src; // id of src node
 	public String dst; // id of dst node
 	public int weight;
@@ -36,5 +36,10 @@ public class Edge {
 		nodes.add(dst);
 		return nodes;
 	}
-	
+	public String getSrc() {
+		return src;
+	}
+	public String getDst() {
+		return dst;
+	}
 }
