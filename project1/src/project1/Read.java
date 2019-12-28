@@ -5,11 +5,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.regex.*; // for locate information of nodes and edges in graphml
 public class Read { 
-  public static void main(String[] args)throws Exception { 
-	  // create new graph
+  public static Graph toGraph(String path) throws Exception {
 	  Graph graph = new Graph();
 	  // Path to graphml file
-	  File file = new File("./src/large_graph.graphml"); // look in project directory
+	  File file = new File(path); // look in project directory
 	  // Creating buffer to read file
 	  BufferedReader br = new BufferedReader(new FileReader(file)); 
 	  
@@ -29,31 +28,38 @@ public class Read {
 	  while ((line = br.readLine()) != null) {
 		  // for nodes
 		  Matcher matcher = regexNode.matcher(line);
-		  while (matcher.find()) {
+		  if (matcher.find()) {
 			  System.out.println(matcher.group(2));
 			  Node newNode = new Node(matcher.group(2));
 			  graph.addNode(newNode);
+			  continue;
 		  }
 		  // for edge - source and dest
 		  Edge newEdge = new Edge();
 		  Matcher matcherEdgeSrcDst = regexEdgeSrcDst.matcher(line);
-		  while (matcherEdgeSrcDst.find()) {
+		  if (matcherEdgeSrcDst.find()) {
 			  System.out.print("src=" + matcherEdgeSrcDst.group(2) + "\t");
 			  System.out.println("dst=" + matcherEdgeSrcDst.group(4));
-			  newEdge.src = matcherEdgeSrcDst.group(2);
-			  newEdge.dst = matcherEdgeSrcDst.group(4);
+			  newEdge.src += matcherEdgeSrcDst.group(2);
+			  newEdge.dst += matcherEdgeSrcDst.group(4);
+			  line = br.readLine();
+			  // for edge's id
+			  Matcher matcherEdgeID = regexEdgeID.matcher(line);
+			  if (matcherEdgeID.find()) {
+				  System.out.print("ID=" + matcherEdgeID.group(2) + "\t");
+				  newEdge.id = matcherEdgeID.group(2);
+			  }
+			  line = br.readLine();
+			  // for edge weight
+			  Matcher matcherEdgeWeight = regexEdgeWeight.matcher(line);
+			  if (matcherEdgeWeight.find()) {
+				  System.out.println("w=" + matcherEdgeWeight.group(2));
+				  newEdge.weight = Integer.parseInt(matcherEdgeWeight.group(2));
+				  graph.addEdge(newEdge);
+			  }
+			  line = br.readLine();
 		  }
-		  // for edge's id
-		  Matcher matcherEdgeID = regexEdgeID.matcher(line);
-		  while (matcherEdgeID.find()) {
-			  System.out.print("ID=" + matcherEdgeID.group(2) + "\t");
-		  }
-		  // for edge weight
-		  Matcher matcherEdgeWeight = regexEdgeWeight.matcher(line);
-		  while (matcherEdgeWeight.find()) {
-			  System.out.println("w=" + matcherEdgeWeight.group(2));
-		  }
-		  
-	  } 
+	  }
+	  return graph;
   } 
 }
