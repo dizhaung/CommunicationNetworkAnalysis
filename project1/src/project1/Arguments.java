@@ -31,7 +31,7 @@ public class Arguments {
                 		}
                 		
                 		else {
-                			System.out.println("You have enter wrong command! Please check again."); 
+                			System.out.println("You have entered wrong command! Please check again! "); 
                 			break;
                 		}
                 	}
