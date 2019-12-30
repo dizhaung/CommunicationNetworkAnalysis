@@ -7,7 +7,7 @@ public class Edge {
 	public String id;
 	public String src; // id of src node
 	public String dst; // id of dst node
-	public int weight;
+	public double weight;
 	
 	// Default Constructor - Null Edge
 	Edge() {
@@ -41,5 +41,8 @@ public class Edge {
 	}
 	public String getDst() {
 		return dst;
+	}
+	public double getWeight() {
+		return weight;
 	}
 }
