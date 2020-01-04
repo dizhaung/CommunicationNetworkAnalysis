@@ -9,7 +9,7 @@ import java.util.Set;
 import project1.Read;
 
 public class Main {
-	public static int getNumPath( HashMap<String, HashSet<String>> precedence, String startId, String endId) {
+	/*public static int getNumPath( HashMap<String, HashSet<String>> precedence, String startId, String endId) {
 		int num = 0;
 		for (String nodeId : precedence.get(endId) ) {
 			if (nodeId.equals(startId)) {
@@ -20,11 +20,12 @@ public class Main {
 			}
 		}
 		return num;
-	}
+	}*/
 	
 	public static Graph graph = new Graph();
 	public static void main(String[] args) throws Exception {
 		Graph G = Read.toGraph("./src/small_graph.graphml");
+		
 
 		/*
 		 * Node a = new Node(); Node b = new Node();
@@ -62,30 +63,40 @@ public class Main {
 		
 		
 		Graph G1 = new Graph();
-		Node N1 = new Node(); Node N2 = new Node(); Node N3 = new Node(); Node N4 = new Node();
-		Edge E1 = new Edge(); Edge E2 = new Edge(); Edge E3 = new Edge(); Edge E4 = new Edge(); Edge E5 = new Edge();
+		Node N1 = new Node(); Node N2 = new Node(); Node N3 = new Node(); Node N4 = new Node(); Node N5 = new Node();
+		Edge E1 = new Edge(); Edge E2 = new Edge(); Edge E3 = new Edge(); Edge E4 = new Edge(); Edge E5 = new Edge(); Edge E6 = new Edge();
 		
-		N1.id = "n1"; N2.id = "n2"; N3.id = "n3"; N4.id = "n4"; 
+		N1.id = "A"; N2.id = "B"; N3.id = "C"; N4.id = "D"; N5.id = "E";
 		
-		E1.id = "e1"; E1.src = N1.getId(); E1.dst = N2.getId(); E1.weight = 2;
-		E2.id = "e2"; E2.src = N2.getId(); E2.dst = N4.getId(); E2.weight = 3;
-		E3.id = "e3"; E3.src = N1.getId(); E3.dst = N3.getId(); E3.weight = 1;
-		E4.id = "e4"; E4.src = N3.getId(); E4.dst = N4.getId(); E4.weight = 4;
-		E5.id = "e5"; E5.src = N1.getId(); E5.dst = N4.getId(); E5.weight = 5;
+		E1.id = "e1"; E1.src = N1.getId(); E1.dst = N2.getId(); E1.weight = 2;	// AB
+		E2.id = "e2"; E2.src = N1.getId(); E2.dst = N3.getId(); E2.weight = 1;	// AC
+		E3.id = "e3"; E3.src = N3.getId(); E3.dst = N4.getId(); E3.weight = 3;	// CD
+		E4.id = "e4"; E4.src = N2.getId(); E4.dst = N4.getId(); E4.weight = 2;	// BD
+		E5.id = "e5"; E5.src = N2.getId(); E5.dst = N5.getId(); E5.weight = 3;	// BE
+		E6.id = "e6"; E6.src = N4.getId(); E6.dst = N5.getId(); E6.weight = 1;	// DE
 		
-		N1.neighbors.put(N2, E1); N1.neighbors.put(N3, E3); N1.neighbors.put(N4, E5);
-		N2.neighbors.put(N1, E1); N2.neighbors.put(N4, E2);
-		N3.neighbors.put(N1, E3); N3.neighbors.put(N4, E4);
-		N4.neighbors.put(N1, E5); N4.neighbors.put(N2, E2); N4.neighbors.put(N3, E4);
+		N1.neighbors.put(N2, E1); N1.neighbors.put(N3, E2);
+		N2.neighbors.put(N1, E1); N2.neighbors.put(N4, E4); N2.neighbors.put(N5, E5);
+		N3.neighbors.put(N1, E2); N3.neighbors.put(N4, E3);
+		N4.neighbors.put(N2, E4); N4.neighbors.put(N3, E3); N4.neighbors.put(N5, E6);
+		N5.neighbors.put(N2, E5); N5.neighbors.put(N4, E6);
 		
-		
-		G1.nodeList.put("n1", N1); G1.nodeList.put("n2", N2); G1.nodeList.put("n3", N3); G1.nodeList.put("n4", N4);
+		G1.nodeList.put("A", N1); 
+		G1.nodeList.put("B", N2);
+		G1.nodeList.put("C", N3); 
+		G1.nodeList.put("D", N4); 
+		G1.nodeList.put("E", N5);
 		G1.edgeList.put("e1", E1); 
 		G1.edgeList.put("e2", E2); 
 		G1.edgeList.put("e3", E3);
-		G1.edgeList.put("e4", E4); G1.edgeList.put("e5", E5);
-		String startNodeId = "n1";
-		String endNodeId = "n4";
+		G1.edgeList.put("e4", E4); 
+		G1.edgeList.put("e5", E5);
+		G1.edgeList.put("e6", E6);
+		
+		
+		String startNodeId = "A";
+		String endNodeId = "E";
+
 		
 		ArrayList<Object> demo = G1.getShortestPath(startNodeId, endNodeId);
 		double length = (double) demo.get(0);
@@ -112,6 +123,9 @@ public class Main {
 			}
 			System.out.println("\tLength: " + length);
 		}
+		
+		System.out.println(G1.getBCM1("B"));
+		System.out.println(G1.getBCM2("B"));
 		
 	}
 }

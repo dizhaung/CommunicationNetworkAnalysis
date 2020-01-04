@@ -134,10 +134,6 @@ public class Graph {
 	}
 	
 	
-	
-	
-	
-	
 	// get the shortest path and the length between 2 given nodes
 	// we use an alternated version of Dijkstra's Algorithm
 	public ArrayList<Object> getShortestPath(String startNodeId, String endNodeId) {
@@ -159,7 +155,7 @@ public class Graph {
 		// a map of preceding node of each node
 		HashMap<String, HashSet<String>> precedence = new HashMap<String, HashSet<String>>();
 		for (String nodeId : nodeList.keySet()) {
-			if (nodeId == startNodeId) {
+			if ( nodeId.equals(startNodeId) ) {
 				precedence.put(nodeId, null);	// the start node will have no preceding node
 			}
 			else { 
@@ -207,12 +203,12 @@ public class Graph {
 					precedence.get(neighborNode.getId()).add(minUnvisitedNode);
 				}
 				else if (distanceFromTheMinNode == distance.get(neighborNode.getId())) {
-					// do not need to renew
+					// do not need to renew but rather add it to precedence
 					precedence.get(neighborNode.getId()).add(minUnvisitedNode);
 				}
 			}			
 				
-			// if the current node in the process is the end node, we can stop the loop here
+			// if the current node in the process is the end node, we can stop the while loop here
 			if (minUnvisitedNode == endNodeId) {
 				break;
 			}
@@ -258,7 +254,7 @@ public class Graph {
 	}
 			
 
-	// get the list of path from precedene map
+	// get the list of path from precedence map
 	private ArrayList< ArrayList<String> > getPathList(HashMap<String, HashSet<String>> precedence, String startId, String endId) {
 		ArrayList< ArrayList<String> > pathList = new ArrayList< ArrayList<String> >();
 		
@@ -285,4 +281,132 @@ public class Graph {
 			
 		return pathList;
 	}
+	
+	// get the diameter of the graph
+	public double getDiameter() {
+		
+		// get the ArrayList of node id to run the for loop with iterator
+		ArrayList<String> nodeIdList = new ArrayList<String>( nodeList.keySet() );
+		
+		double diameter = 0;
+		
+		// check the length of shortest path for every pair of nodes in the list
+		// loop for every node in the list
+		for (int i = 0; i < nodeIdList.size(); i++) {
+			String startId = nodeIdList.get(i);
+			
+			// loop for every node in the list which is different from the first node 
+			for (int j = 0; j < nodeIdList.size(); j++) {
+				if (j == i) {
+					continue;
+				}
+				String endId = nodeIdList.get(j);
+				
+				// get the length of shortest path 
+				double length = (double) this.getShortestPath(startId, endId).get(0);
+				
+				// if the length is longer, update the diameter
+				if (length > diameter) {
+					diameter = length;
+				}
+			}
+		}
+		
+		// return the diameter
+		return diameter;
+		
+	}
+	
+	// get the betweenness centrality measure
+	public double getBCM1(String nodeId) {
+		
+		double bcl = 0.0;
+		
+		// start node, different from nodeId
+		for (String startId : nodeList.keySet()) {
+			if (startId.equals(nodeId)) {
+				continue;
+			}
+			
+			// end node, different from start node, nodeId
+			for (String endId : nodeList.keySet()) {
+				if (endId.equals(nodeId) || endId.equals(startId)) {
+					continue;
+				}
+				
+				// find the number and the list of shortest path between 1st and 2nd node
+				ArrayList<Object> spList = this.getShortestPath(startId, endId);
+					
+				int sigma1 = 0;
+				int sigma2 = (int) spList.get(1);
+				
+				ArrayList< ArrayList<String>> pathList = (ArrayList< ArrayList<String>>) spList.get(2); 
+					
+				// find the number of SP go through third node
+				for (ArrayList<String> path : pathList) {
+					if (path.contains(nodeId)) {
+						sigma1 += 1;
+					}
+				}
+				
+				// add sigma1 / sigma2 into bcl
+				bcl += ((double) sigma1 / sigma2);
+				System.out.println(startId + "->" + nodeId + "->" + endId + ": " + sigma1 + " / " + sigma2);
+			
+			}	// end loop 2
+		
+		}	// end loop 1
+		
+		// return the value
+		return bcl;
+		
+	}
+	
+	// another BCM method, idea from Phuoc
+	public double getBCM2(String nodeId) {
+		double bcl = 0.0;
+		
+		// start node, different from nodeId
+				for (String startId : nodeList.keySet()) {
+					if (startId.equals(nodeId)) {
+						continue;
+					}
+					
+					// end node, different from start node, nodeId
+					for (String endId : nodeList.keySet()) {
+						if (endId.equals(nodeId) || endId.equals(startId)) {
+							continue;
+						}
+						
+						// get length from startId to nodeId
+						ArrayList<Object> spList1 = this.getShortestPath(startId, nodeId);
+						double length1 = (double) spList1.get(0);
+						
+						// get length from nodeId to endId
+						ArrayList<Object> spList2 = this.getShortestPath(nodeId, endId);
+						double length2 = (double) spList2.get(0);
+						
+						// get length from startId to endId
+						ArrayList<Object> spList3 = this.getShortestPath(startId, endId);
+						double length3 = (double) spList3.get(0);
+						
+						if (length1 + length2 == length3) {
+							int sigma1 = (int) spList1.get(1) * (int) spList2.get(1);	// num of path from 1st to 2nd * num of path from 2nd to 3rd
+							int sigma2 = (int) spList3.get(1);
+							
+							System.out.println(startId + "->" + nodeId + "->" + endId + ": " + sigma1 + " / " + sigma2);
+							bcl += (double) sigma1 / sigma2;
+						}
+						else {
+							continue;
+						}
+						
+						
+					}	// end loop 2
+				}	// end loop 1
+		
+		// return the value
+		return bcl;
+	}
+	
 }
