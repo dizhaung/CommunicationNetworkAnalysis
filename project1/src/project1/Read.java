@@ -30,7 +30,7 @@ public class Read {
 			// for nodes
 			Matcher matcher = regexNode.matcher(line);
 			if (matcher.find()) {
-				System.out.println(matcher.group(2));
+				//System.out.println(matcher.group(2));
 				Node newNode = new Node(matcher.group(2));
 				graph.addNode(newNode);
 				continue;
@@ -39,25 +39,31 @@ public class Read {
 			Edge newEdge = new Edge();
 			Matcher matcherEdgeSrcDst = regexEdgeSrcDst.matcher(line);
 			if (matcherEdgeSrcDst.find()) {
-				System.out.print("src=" + matcherEdgeSrcDst.group(2) + "\t");
-				System.out.println("dst=" + matcherEdgeSrcDst.group(4));
+				//System.out.print("src=" + matcherEdgeSrcDst.group(2) + "\t");
+				//System.out.println("dst=" + matcherEdgeSrcDst.group(4));
 				newEdge.src += matcherEdgeSrcDst.group(2);
 				newEdge.dst += matcherEdgeSrcDst.group(4);
 				line = br.readLine();
 				// for edge's id
 				Matcher matcherEdgeID = regexEdgeID.matcher(line);
 				if (matcherEdgeID.find()) {
-					System.out.print("ID=" + matcherEdgeID.group(2) + "\t");
+					//System.out.print("ID=" + matcherEdgeID.group(2) + "\t");
 					newEdge.id = matcherEdgeID.group(2);
 				}
 				line = br.readLine();
 				// for edge weight
 				Matcher matcherEdgeWeight = regexEdgeWeight.matcher(line);
 				if (matcherEdgeWeight.find()) {
-					System.out.println("w=" + matcherEdgeWeight.group(2));
+					//System.out.println("w=" + matcherEdgeWeight.group(2));
 					newEdge.weight = Integer.parseInt(matcherEdgeWeight.group(2));
 					graph.addEdge(newEdge);
 				}
+				
+				// add neighbor for src, des
+				graph.nodeList.get(newEdge.getSrc()).addNeighbor(graph.nodeList.get(newEdge.getDst()), newEdge);
+				graph.nodeList.get(newEdge.getDst()).addNeighbor(graph.nodeList.get(newEdge.getSrc()), newEdge);
+				 
+				
 				line = br.readLine();
 			}
 		}

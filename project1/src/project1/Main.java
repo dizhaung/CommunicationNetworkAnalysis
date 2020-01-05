@@ -9,23 +9,12 @@ import java.util.Set;
 import project1.Read;
 
 public class Main {
-	/*public static int getNumPath( HashMap<String, HashSet<String>> precedence, String startId, String endId) {
-		int num = 0;
-		for (String nodeId : precedence.get(endId) ) {
-			if (nodeId.equals(startId)) {
-				num += 1;
-			}
-			else {
-				num += getNumPath(precedence, startId, nodeId);
-			}
-		}
-		return num;
-	}*/
 	
 	public static Graph graph = new Graph();
 	public static void main(String[] args) throws Exception {
 		Graph G = Read.toGraph("./src/small_graph.graphml");
-		
+		String a = "abc";
+		System.out.println(a.charAt(0));
 
 		/*
 		 * Node a = new Node(); Node b = new Node();

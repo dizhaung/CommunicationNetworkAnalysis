@@ -8,10 +8,12 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
+// TO_FIX: the HashMap object may change order of the key
+
 public class Graph {
 	
-	public Map<String, Node> nodeList = new HashMap<String, Node>();// node id and node
-	public Map<String, Edge> edgeList = new HashMap<String, Edge>(); // edge id and edge
+	public HashMap<String, Node> nodeList = new HashMap<String, Node>();// node id and node
+	public HashMap<String, Edge> edgeList = new HashMap<String, Edge>(); // edge id and edge
 
 	
 	
@@ -260,7 +262,7 @@ public class Graph {
 		
 		// recursive method: the pathList of the endNode is all paths of its preceding nodes with the endNode itself in the last index
 		// the starting node does not have preceding node, the pathList will have only 1 node
-		if (endId == startId) {
+		if (endId.equals(startId)) {
 			ArrayList<String> path = new ArrayList<String>();
 			
 			path.add(endId);
@@ -351,7 +353,7 @@ public class Graph {
 				
 				// add sigma1 / sigma2 into bcl
 				bcl += ((double) sigma1 / sigma2);
-				System.out.println(startId + "->" + nodeId + "->" + endId + ": " + sigma1 + " / " + sigma2);
+				//System.out.println(startId + "->" + nodeId + "->" + endId + ": " + sigma1 + " / " + sigma2);
 			
 			}	// end loop 2
 		

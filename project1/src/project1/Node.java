@@ -33,5 +33,9 @@ public class Node {
 	public Map<Node, Edge> getNeighbors(){
 		return this.neighbors;
 	}
+	
+	public void addNeighbor(Node newNode, Edge newEdge) {
+		neighbors.put(newNode, newEdge);
+	}
 
 }
