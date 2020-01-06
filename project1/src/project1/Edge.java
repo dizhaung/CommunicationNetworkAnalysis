@@ -21,6 +21,12 @@ public class Edge {
 		src = newSrc;
 		dst = newDst;
 	}
+	Edge(Edge otherEdge) {
+		id = otherEdge.getId();
+		src = otherEdge.getSrc();
+		dst = otherEdge.getDst();
+		weight = otherEdge.getWeight();
+	}
 	
 	/*
 	public void setId(String newId) {
@@ -35,6 +41,12 @@ public class Edge {
 		nodes.add(src);
 		nodes.add(dst);
 		return nodes;
+	}
+	public void setSrc(String Src) {
+		src = Src;
+	}
+	public void setDst(String Dst) {
+		dst = Dst;
 	}
 	public String getSrc() {
 		return src;

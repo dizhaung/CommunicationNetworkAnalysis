@@ -21,6 +21,10 @@ public class Node {
 		id = newId;
 		neighbors = newNeighbors;
 	}
+	Node(Node otherNode) {
+		id = otherNode.getId();
+		neighbors = new HashMap<Node, Edge>(otherNode.getNeighbors());
+	}
 	
 	public void setId(String newId) {
 		this.id = newId;

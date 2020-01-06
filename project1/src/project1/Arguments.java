@@ -10,6 +10,8 @@ import java.util.HashMap;
 public class Arguments {
 	public static void main(String[] args) throws Exception {
 		
+		long start = System.currentTimeMillis();
+		
 		// if there is no argument, stop the program
 		if (args.length == 0) {
 			System.out.println("There were no commandline arguments passed!");
@@ -136,10 +138,10 @@ public class Arguments {
 				
 				// check connectivity
 				System.out.println("\t" + "Is connected? " + ( graph.isConnected() == true ? "Yes" : "No") );
-				
+				long startPoint = System.currentTimeMillis();
 				// get diameter
 				System.out.println("\t" + "Diameter " + graph.getDiameter());
-				
+				System.out.println(System.currentTimeMillis() - startPoint);
 				// 2. print all vertices's ID
 				System.out.println("### Vertices ###");
 				int i = 0;
@@ -217,6 +219,7 @@ public class Arguments {
 				
 			}
 			
+			
 				
 			/*
 			if (args.length == 1) {
@@ -249,7 +252,7 @@ public class Arguments {
 			}*/		//close if
 		}	// close else
                 
-		
+		System.out.println("Time: " + (System.currentTimeMillis() - start));
 		
 	}
 }

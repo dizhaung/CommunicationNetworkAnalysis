@@ -14,8 +14,36 @@ public class Graph {
 	
 	public HashMap<String, Node> nodeList = new HashMap<String, Node>();// node id and node
 	public HashMap<String, Edge> edgeList = new HashMap<String, Edge>(); // edge id and edge
-
+	private String edgedefault;
 	
+	// Constructors
+	public Graph()	{}
+	
+	public Graph(Graph graph) {
+		nodeList = new HashMap<String, Node>(graph.getNodeList());
+		edgeList = new HashMap<String, Edge>(graph.getEdgeList());
+	}
+
+	//
+	public void addNode(String id, Node node) {
+		nodeList.put(id, node);
+	}
+	public void addEdge(String id, Edge edge) {
+		edgeList.put(id, edge);
+	}
+	
+	public void setEdgedefault(int i) {
+		if (i == 0) {
+			edgedefault = "undirected";
+		}
+		else {
+			edgedefault = "directed";
+		}
+	}
+	
+	public String getEdgedefault() {
+		return edgedefault;
+	}
 	
 	public int getTotalNodes() {
 		return nodeList.size();
@@ -205,7 +233,8 @@ public class Graph {
 					precedence.get(neighborNode.getId()).add(minUnvisitedNode);
 				}
 				else if (distanceFromTheMinNode == distance.get(neighborNode.getId())) {
-					// do not need to renew but rather add it to precedence
+					// unlike dijkstra's algorithm, multiple path should be update into the precedence
+					// if from another node the distance is the same, add it to the precedence
 					precedence.get(neighborNode.getId()).add(minUnvisitedNode);
 				}
 			}			
@@ -235,7 +264,7 @@ public class Graph {
 		}
 		
 		// return length, number of shortest paths and pathList
-		return new ArrayList<Object>( Arrays.asList(length, numOfPath, pathList) );	
+		return new ArrayList<Object>( Arrays.asList(length, numOfPath, pathList, distance) );	
 		
 	}
 	
@@ -284,8 +313,83 @@ public class Graph {
 		return pathList;
 	}
 	
+	public ArrayList<Object> getDijkstraTree(String startNodeId) {
+		Graph dijkstraTree = new Graph();
+		
+		// create a map of updated distance from the starting node to every node
+		// initially it is   0, inf, inf, inf, ...
+		Map<String, Double> distance = new HashMap<String, Double>();	
+		for (String nodeId : nodeList.keySet()) {
+			if (nodeId.equals(startNodeId)) {
+				// the starting node will always have 0 distance from itself
+				distance.put(nodeId, 0.0);
+			}
+			else {
+				// the others have initial distance is infinity
+				distance.put(nodeId, Double.MAX_VALUE);
+			}
+		}
+		
+		// a map of preceding node of each node
+		HashMap<String, String> precedence = new HashMap<String, String>();
+		for (String nodeId : nodeList.keySet()) {
+			precedence.put(nodeId, null);
+		}
+		
+		//
+		Set<String> unvisitedNode = new HashSet<String>();
+		for (String nodeId : nodeList.keySet()) {
+			unvisitedNode.add(nodeId);
+		}
+		
+		double minUnvisitedLength;
+		String minUnvisitedNode;
+		// run loop while not all node is visited
+		while ( unvisitedNode.size() != 0 ) {
+			// find the unvisited node with minimum current distance in distance list
+			minUnvisitedLength = Double.MAX_VALUE;
+			minUnvisitedNode = "";
+			for (String nodeId : unvisitedNode) {
+				if (distance.get(nodeId) < minUnvisitedLength) {
+					minUnvisitedNode = nodeId;
+					minUnvisitedLength = distance.get(nodeId); 
+				}
+			}
+			
+			// if there are no node that can be visited from the unvisitedNode, break the loop 
+			if (minUnvisitedLength == Double.MAX_VALUE) {
+				break;
+			}			
+	
+			// TODO: add code for updating the dijkstraTree
+			
+			// remove the node from unvisitedNode
+			unvisitedNode.remove(minUnvisitedNode);
+			
+			// update the distance of its neighbors
+			for (Node neighborNode : this.nodeList.get(minUnvisitedNode).neighbors.keySet()) {
+				double distanceFromTheMinNode = distance.get(minUnvisitedNode) + this.nodeList.get(minUnvisitedNode).neighbors.get(neighborNode).getWeight();
+				// if the distance of the neighbor can be shorter from the current node, change 
+				// its details in distance and precedence
+				if ( distanceFromTheMinNode < distance.get(neighborNode.getId()) ) {
+					distance.replace(neighborNode.getId(), distanceFromTheMinNode);
+					// 
+					precedence.put(neighborNode.getId(), minUnvisitedNode);
+				}
+				
+			}			
+				
+		}
+		
+		
+		return new ArrayList<Object>( Arrays.asList(dijkstraTree, distance) );
+	}
+	
 	// get the diameter of the graph
 	public double getDiameter() {
+		
+		// make a copy of the graph
+		Graph copyGraph = new Graph(this);
 		
 		// get the ArrayList of node id to run the for loop with iterator
 		ArrayList<String> nodeIdList = new ArrayList<String>( nodeList.keySet() );
@@ -294,6 +398,18 @@ public class Graph {
 		
 		// check the length of shortest path for every pair of nodes in the list
 		// loop for every node in the list
+		for (String nodeId : nodeIdList) {
+			
+			Set<Double> distance = new HashSet<Double>( ( (Map<String, Double>) copyGraph.getDijkstraTree(nodeId).get(1) ).values() );
+			for (double i : distance) {
+				if (i != Double.MAX_VALUE && i > diameter) {
+					diameter = i;
+				}
+			}
+			
+			
+		}
+		/*
 		for (int i = 0; i < nodeIdList.size(); i++) {
 			String startId = nodeIdList.get(i);
 			
@@ -312,7 +428,7 @@ public class Graph {
 					diameter = length;
 				}
 			}
-		}
+		}*/
 		
 		// return the diameter
 		return diameter;

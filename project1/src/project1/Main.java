@@ -50,6 +50,15 @@ public class Main {
 		
 		//System.out.println(G.isConnected());
 		
+		ArrayList<Integer> HH = new ArrayList<Integer>();
+		HH.add(1);
+		HH.add(2);
+		HH.add(3);
+		
+		Set<Integer> FF = new HashSet<Integer>(HH);
+		FF.remove(2);
+		System.out.println(HH);
+		System.out.println(FF);
 		
 		Graph G1 = new Graph();
 		Node N1 = new Node(); Node N2 = new Node(); Node N3 = new Node(); Node N4 = new Node(); Node N5 = new Node();
@@ -115,6 +124,7 @@ public class Main {
 		
 		System.out.println(G1.getBCM1("B"));
 		System.out.println(G1.getBCM2("B"));
+		System.out.println(G1.getDiameter());
 		
 	}
 }

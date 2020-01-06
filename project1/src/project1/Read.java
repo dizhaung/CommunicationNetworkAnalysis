@@ -13,11 +13,13 @@ public class Read {
 		// Creating buffer to read file
 		BufferedReader br = new BufferedReader(new FileReader(file)); 
 		
+		long start = System.currentTimeMillis();
 		// skip unnecessary lines of information
 		while (!br.readLine().contains("<graph id=")) {}
 		
 		// start reading nodes and edges
 		// using regular expression based on graphml nodes and edges format
+		//Pattern regexGraph = Pattern.compile("(<graph id=\")(\\p{Alnum}+)(\" edgedefault =\")(\\\\p{Alnum}+)(\">)");
 		Pattern regexNode = Pattern.compile("(<node id=\")(\\p{Alnum}+)(\">)");
 		Pattern regexEdgeSrcDst = Pattern.compile("(<edge source=\")(\\p{Alnum}+)(\" target=\")(\\p{Alnum}+)(\")");
 		Pattern regexEdgeID = Pattern.compile("(<data key=\"e_id\">)(\\p{Alnum}+)(</data>)");
@@ -25,8 +27,8 @@ public class Read {
 		
 		// store current reading line to analyze information 
 		String line;
-		
 		while ((line = br.readLine()) != null) {
+			
 			// for nodes
 			Matcher matcher = regexNode.matcher(line);
 			if (matcher.find()) {
@@ -67,6 +69,7 @@ public class Read {
 				line = br.readLine();
 			}
 		}
+		System.out.println(System.currentTimeMillis() - start);
 		
 		return graph;
 	} 
