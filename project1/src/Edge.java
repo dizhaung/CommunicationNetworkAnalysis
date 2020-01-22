@@ -1,8 +1,6 @@
-package project1;
-
 import java.util.ArrayList;
 
-public class Edge {
+class Edge {
 
 	public String id;
 	public String src; // id of src node
@@ -28,11 +26,9 @@ public class Edge {
 		weight = otherEdge.getWeight();
 	}
 	
-	/*
 	public void setId(String newId) {
 		this.id = newId;
 	}
-	*/
 	public String getId() {
 		return this.id;
 	}
@@ -45,14 +41,17 @@ public class Edge {
 	public void setSrc(String Src) {
 		src = Src;
 	}
-	public void setDst(String Dst) {
-		dst = Dst;
-	}
 	public String getSrc() {
 		return src;
 	}
+	public void setDst(String Dst) {
+		dst = Dst;
+	}
 	public String getDst() {
 		return dst;
+	}
+	public void setWeight(double Weight) {
+		weight = Weight;
 	}
 	public double getWeight() {
 		return weight;

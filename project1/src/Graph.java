@@ -1,5 +1,3 @@
-package project1;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,7 +12,8 @@ public class Graph {
 	
 	public HashMap<String, Node> nodeList = new HashMap<String, Node>();// node id and node
 	public HashMap<String, Edge> edgeList = new HashMap<String, Edge>(); // edge id and edge
-	private String edgedefault;
+	private String edgeDefault;
+	private String id;
 	
 	// Constructors
 	public Graph()	{}
@@ -25,6 +24,13 @@ public class Graph {
 	}
 
 	//
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getId() {
+		return id;
+	}
+	
 	public void addNode(String id, Node node) {
 		nodeList.put(id, node);
 	}
@@ -32,17 +38,12 @@ public class Graph {
 		edgeList.put(id, edge);
 	}
 	
-	public void setEdgedefault(int i) {
-		if (i == 0) {
-			edgedefault = "undirected";
-		}
-		else {
-			edgedefault = "directed";
-		}
+	public void setEdgedefault(String edgedefault) {
+			edgeDefault = edgedefault;
 	}
 	
 	public String getEdgedefault() {
-		return edgedefault;
+		return edgeDefault;
 	}
 	
 	public int getTotalNodes() {
@@ -168,6 +169,20 @@ public class Graph {
 	// we use an alternated version of Dijkstra's Algorithm
 	public ArrayList<Object> getShortestPath(String startNodeId, String endNodeId) {
 		
+		//
+		double length;
+		int numOfPath; 
+		ArrayList< ArrayList<String>> pathList = new ArrayList< ArrayList<String>>();
+		
+		if (endNodeId.equals(startNodeId)) {
+			length = 0;
+			numOfPath = 0;
+			ArrayList<String> path = new ArrayList<String>();
+			path.add(startNodeId);
+			pathList.add(path);
+			return new ArrayList<Object>( Arrays.asList(length, numOfPath, pathList) ); 
+		}
+		
 		// create a map of updated distance from the starting node to every node
 		// initially it is   0, inf, inf, inf, ...
 		Map<String, Double> distance = new HashMap<String, Double>();	
@@ -238,7 +253,7 @@ public class Graph {
 					precedence.get(neighborNode.getId()).add(minUnvisitedNode);
 				}
 			}			
-				
+			
 			// if the current node in the process is the end node, we can stop the while loop here
 			if (minUnvisitedNode == endNodeId) {
 				break;
@@ -246,9 +261,7 @@ public class Graph {
 				
 		}
 		
-		double length;
-		int numOfPath; 
-		ArrayList< ArrayList<String>> pathList = new ArrayList< ArrayList<String>>();
+		
 		
 		if (distance.get(endNodeId) == Double.MAX_VALUE) {
 			// in case there is no shortest path between the 2 nodes
@@ -264,7 +277,7 @@ public class Graph {
 		}
 		
 		// return length, number of shortest paths and pathList
-		return new ArrayList<Object>( Arrays.asList(length, numOfPath, pathList, distance) );	
+		return new ArrayList<Object>( Arrays.asList(length, numOfPath, pathList) );	
 		
 	}
 	
@@ -386,6 +399,7 @@ public class Graph {
 	}
 	
 	// get the diameter of the graph
+	@SuppressWarnings("unchecked")
 	public double getDiameter() {
 		
 		// make a copy of the graph
@@ -435,18 +449,20 @@ public class Graph {
 		
 	}
 	
+	
 	// get the betweenness centrality measure
+	@SuppressWarnings("unchecked")
 	public double getBCM1(String nodeId) {
 		
 		double bcl = 0.0;
 		
-		// start node, different from nodeId
+		// for each start node, different from nodeId
 		for (String startId : nodeList.keySet()) {
 			if (startId.equals(nodeId)) {
 				continue;
 			}
 			
-			// end node, different from start node, nodeId
+			// for each end node, different from start node, nodeId
 			for (String endId : nodeList.keySet()) {
 				if (endId.equals(nodeId) || endId.equals(startId)) {
 					continue;
@@ -512,7 +528,7 @@ public class Graph {
 							int sigma1 = (int) spList1.get(1) * (int) spList2.get(1);	// num of path from 1st to 2nd * num of path from 2nd to 3rd
 							int sigma2 = (int) spList3.get(1);
 							
-							System.out.println(startId + "->" + nodeId + "->" + endId + ": " + sigma1 + " / " + sigma2);
+							//System.out.println(startId + "->" + nodeId + "->" + endId + ": " + sigma1 + " / " + sigma2);
 							bcl += (double) sigma1 / sigma2;
 						}
 						else {
