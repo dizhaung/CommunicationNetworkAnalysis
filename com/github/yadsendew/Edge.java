@@ -1,11 +1,12 @@
+package com.github.yadsendew;
 import java.util.ArrayList;
 
 class Edge {
 
-	public String id;
-	public String src; // id of src node
-	public String dst; // id of dst node
-	public double weight;
+	private String id;
+	private String src; // id of src node
+	private String dst; // id of dst node
+	private double weight;
 	
 	// Default Constructor - Null Edge
 	Edge() {
@@ -14,10 +15,11 @@ class Edge {
 		weight = 0;
 	}
 	// Constructor - Determined Edge
-	Edge(String newId, String newSrc, String newDst){
+	Edge(String newId, String newSrc, String newDst, double newWeight){
 		id = newId;
 		src = newSrc;
 		dst = newDst;
+		weight = newWeight;
 	}
 	Edge(Edge otherEdge) {
 		id = otherEdge.getId();

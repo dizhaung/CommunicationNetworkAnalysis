@@ -1,10 +1,11 @@
-import java.util.Map;
+package com.github.yadsendew;
+
 import java.util.HashMap;
 
 public class Node {
 	
-	public String id;
-	public Map<Node, Edge> neighbors = new HashMap<Node, Edge>();
+	private String id;
+	private HashMap<Node, Edge> neighbors = new HashMap<Node, Edge>();
 	
 	// Default Constructors
 	Node(){
@@ -15,7 +16,7 @@ public class Node {
 	Node(String newId){
 		id = newId;
 	}
-	Node(String newId, Map<Node, Edge> newNeighbors){
+	Node(String newId, HashMap<Node, Edge> newNeighbors){
 		id = newId;
 		neighbors = newNeighbors;
 	}
@@ -32,7 +33,7 @@ public class Node {
 		return this.id;
 	}
 	
-	public Map<Node, Edge> getNeighbors(){
+	public HashMap<Node, Edge> getNeighbors(){
 		return this.neighbors;
 	}
 	

@@ -1,0 +1,30 @@
+UndirectedWeightedGraph G1 = new UndirectedWeightedGraph();
+Node N1 = new Node(); Node N2 = new Node(); Node N3 = new Node(); Node N4 = new Node(); Node N5 = new Node();
+Edge E1 = new Edge(); Edge E2 = new Edge(); Edge E3 = new Edge(); Edge E4 = new Edge(); Edge E5 = new Edge(); Edge E6 = new Edge();
+
+N1.setId("A"); N2.setId("B"); N3.setId("C"); N4.setId("D"); N5.setId("E");
+
+E1.setId("e1"); E1.setSrc(N1.getId()); E1.setDst(N2.getId()); E1.setWeight(2);	// AB
+E2.setId("e2"); E2.setSrc(N1.getId()); E2.setDst(N3.getId()); E2.setWeight(1);	// AC
+E3.setId("e3"); E3.setSrc(N3.getId()); E3.setDst(N4.getId()); E3.setWeight(3);	// CD
+E4.setId("e4"); E4.setSrc(N2.getId()); E4.setDst(N4.getId()); E4.setWeight(2);	// BD
+E5.setId("e5"); E5.setSrc(N2.getId()); E5.setDst(N5.getId()); E5.setWeight(3);	// BE
+E6.setId("e6"); E6.setSrc(N4.getId()); E6.setDst(N5.getId()); E6.setWeight(1);	// DE
+
+N1.getNeighbors().put(N2, E1); N1.getNeighbors().put(N3, E2);
+N2.getNeighbors().put(N1, E1); N2.getNeighbors().put(N4, E4); N2.getNeighbors().put(N5, E5);
+N3.getNeighbors().put(N1, E2); N3.getNeighbors().put(N4, E3);
+N4.getNeighbors().put(N2, E4); N4.getNeighbors().put(N3, E3); N4.getNeighbors().put(N5, E6);
+N5.getNeighbors().put(N2, E5); N5.getNeighbors().put(N4, E6);
+
+G1.addNode(N1);
+G1.addNode(N2);
+G1.addNode(N3);
+G1.addNode(N4);
+G1.addNode(N5);
+G1.addEdge(E1);
+G1.addEdge(E2);
+G1.addEdge(E3);
+G1.addEdge(E4);
+G1.addEdge(E5);
+G1.addEdge(E6);

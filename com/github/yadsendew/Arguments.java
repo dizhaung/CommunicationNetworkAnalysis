@@ -1,11 +1,25 @@
+package com.github.yadsendew;
 import java.io.File;
 import java.util.ArrayList;
 
 public class Arguments {
-	public ArrayList< ArrayList<String> > taskAnalysed = new ArrayList< ArrayList<String> >();
-	public ArrayList<String> outputFileList = new ArrayList<String>();
-	boolean isInputValid = true;
-	public String fileName;
+	private ArrayList< ArrayList<String> > taskAnalysed = new ArrayList< ArrayList<String> >();
+	private ArrayList<String> outputFileList = new ArrayList<String>();
+	private boolean isInputValid = true;
+	private String fileName;
+	
+	// get, set
+	public ArrayList< ArrayList<String> > getTaskAnalised() {
+		return taskAnalysed;
+	}
+	
+	public ArrayList<String> getOutputFileList() {
+		return outputFileList;
+	}
+	
+	public String getFileName() {
+		return fileName;
+	}
 	
 	private void checkEmptyArg(String[] taskArray) {
 		// if there is no argument, stop the program
@@ -18,7 +32,8 @@ public class Arguments {
 	private void checkFileExistance(String fileName) { 
 		this.fileName = fileName;
 		
-		String path = "./src/" + fileName;
+		System.out.println(System.getProperty("user.dir"));
+		String path = "resources/" + fileName;
 		File f = new File(path);
 		
 		// check if the file argument exist, exit if not found
@@ -104,8 +119,6 @@ public class Arguments {
 	
 	public void analyse(String[] taskArray) {
 		
-		long start = System.currentTimeMillis();
-		
 		// check if the argument array is empty
 		checkEmptyArg(taskArray);
 		
@@ -136,55 +149,5 @@ public class Arguments {
         	} // end else if	
 		
 		}	// end for loop
-		
-		
-		for (ArrayList<String> task : taskAnalysed) {
-			for (String i : task) {
-				System.out.print(i + " ");
-			}
-			System.out.println();
-		}
-		for (String file : outputFileList) {
-			System.out.println(file);
-		}
-		
-		if (isInputValid == false) {
-			System.exit(0);
-		}
-			
-				
-		/*
-		if (args.length == 1) {
-			System.out.println("Graph properties: ");
-		}
-		else {
-			for (int i = 1; i < args.length; i++) {
-				
-				if (args[i].equals("-s") ) {
-					System.out.println("Graph properties:  ");
-					System.out.println("s " + args[i+1] + " " + args[i+2]);
-					break;
-				}
-				if (args[i].equals("-a")) {
-					System.out.println("Graph properties:  ");
-					System.out.println("a " + args[i+1]);
-					break;
-				}
-				if (args[i].equals("-b")) {
-					System.out.println("Graph properties:  ");
-					System.out.println("b " + args[i+1]);
-					break;
-				}
-				
-				else {
-					System.out.println("You have entered wrong command! Please check again! "); 
-					break;
-				}
-			}
-		}*/		//close if
-	
-                
-		System.out.println("Time: " + (System.currentTimeMillis() - start));
-		
 	}
 }
