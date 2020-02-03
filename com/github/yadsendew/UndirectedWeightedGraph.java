@@ -18,7 +18,7 @@ public class UndirectedWeightedGraph implements Graph<UndirectedWeightedGraph> {
 	private String edgeDefault;
 	private String id;
 	private ShortestPathMatrix shortestPathMatrix;
-	private boolean sPMChange = false;	// to check if their is a need to change the shortestPathMatrix in some method
+	private boolean change = false;	// to check if their is a need to change the shortestPathMatrix in some method
 	
 	private HashMap< String, Double > bcmMap = new HashMap< String, Double >();
 	
@@ -35,8 +35,10 @@ public class UndirectedWeightedGraph implements Graph<UndirectedWeightedGraph> {
 		shortestPathMatrix = new ShortestPathMatrix(this);
 	}
 	public ShortestPathMatrix getShortestPathMatrix() {
-		if (shortestPathMatrix == null)
+		if (shortestPathMatrix == null || change){
 			shortestPathMatrix = new ShortestPathMatrix(this);
+			change = false;
+		}
 		return shortestPathMatrix;
 	}
 
@@ -54,7 +56,7 @@ public class UndirectedWeightedGraph implements Graph<UndirectedWeightedGraph> {
 	public void addNode(Node node) {
 		nodeList.put(node.getId(), node);
 		nodeId.add(node.getId());
-		sPMChange = true;
+		change = true;
 	}
 	/*
 	addEdge function adds an edge to the graph
@@ -66,7 +68,7 @@ public class UndirectedWeightedGraph implements Graph<UndirectedWeightedGraph> {
 		// get node
 		nodeList.get(edge.getSrc()).addNeighbor(nodeList.get(edge.getDst()), edge);
 		nodeList.get(edge.getDst()).addNeighbor(nodeList.get(edge.getSrc()), edge);
-		sPMChange = true;
+		change = true;
 	}
 	
 	public void setEdgeDefault(String edge_default) {
