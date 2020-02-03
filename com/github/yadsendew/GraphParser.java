@@ -38,9 +38,6 @@ public class GraphParser extends DefaultHandler {
       } else if (qName.equalsIgnoreCase("edge")) {
          newEdgeSrc = attributes.getValue("source").substring(1);
          newEdgeDst = attributes.getValue("target").substring(1);
-         // print 
-         System.out.println("Source: " + newEdgeSrc);
-         System.out.println("Source: " + newEdgeDst);
       }
       if (qName.equalsIgnoreCase("data")) {
          String keyValue = attributes.getValue("key");
@@ -63,30 +60,25 @@ public class GraphParser extends DefaultHandler {
       if (qName.equalsIgnoreCase("node")) {
          Node newNode = new Node(newNodeId);
          undirectedWeightedGraph.addNode(newNode);
-         System.out.println("-------------------------------------------------------------------");
       }
       if (qName.equalsIgnoreCase("edge")) {
          // add edge
          Edge newEdge = new Edge(newEdgeId, newEdgeSrc, newEdgeDst, newEdgeWeight);
          undirectedWeightedGraph.addEdge(newEdge);
-         System.out.println("*******************************************************************");
       }
    }
 
    @Override
    public void characters(char ch[], int start, int length) throws SAXException {
       if (bNodeKey){
-         System.out.println("v_id: " + new String(ch, start, length));
          newNodeId = new String(ch, start, length);
          bNodeKey = false;
       }
       if (bEdgeId){
-         System.out.println("e_id: " + new String(ch, start, length));
          newEdgeId = new String(ch, start, length);
          bEdgeId = false;
       }
       if (bEdgeWeight){
-         System.out.println("e_weight: " + new String(ch, start, length));
          newEdgeWeight = Double.parseDouble(new String(ch, start, length));
          bEdgeWeight = false;
       }

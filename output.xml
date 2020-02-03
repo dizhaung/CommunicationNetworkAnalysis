@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <TotalNode value="250"/>
+    <TotalEdge value="249"/>
+    <Company id="2">
+        <Name>eBay</Name>
+        <Type>Shopping</Type>
+        <Employees>2000</Employees>
+    </Company>
+    <Company id="3">
+        <Name>Google</Name>
+        <Type>Search</Type>
+        <Employees>3000</Employees>
+    </Company>
+</graphml>

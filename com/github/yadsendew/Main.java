@@ -22,14 +22,8 @@ public class Main {
     	// Parse graphml to graph object
 		UndirectedWeightedGraph graph = GraphParser.parse(path);
 		System.out.println(System.currentTimeMillis() - startpoint);
-		// Test Shortest Path Matrix
-		System.out.println(System.currentTimeMillis() - startpoint);
-		BetweennessCentrality bCentrality = new BetweennessCentrality(graph, "2");
-		BetweennessCentrality bCentralitie = new BetweennessCentrality(graph, "3");
-		System.out.println("Node 2" + ": " + bCentrality.getBCM());
-		System.out.println("Node 3" + ": " + bCentralitie.getBCM());
-		
-		/* // Controller
+
+		// Controller
 		if (myArgs.getOutputFileList().size() == 0) { // output in command line
 		// 1. Print all attributes of the graph
 			System.out.println("### Graph attributes ###");
@@ -117,10 +111,12 @@ public class Main {
 			// Output to XML format
 			GraphWriter.exportToXML(graph, myArgs.getOutputFileList().get(0));
 			// Output to normal text
-			GraphWriter.exportToText(graph, myArgs.getOutputFileList().get(1));
-		} */
+			//GraphWriter.exportToText(graph, myArgs.getOutputFileList().get(1));
+		}
 
 		// End of running time
+		System.out.println("----------------------------------------");
+		System.out.print("Executed time: ");
         System.out.println(System.currentTimeMillis() - startpoint);
         
     }
