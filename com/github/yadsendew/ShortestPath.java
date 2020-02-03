@@ -20,7 +20,7 @@ public class ShortestPath {
 	public double getNumOfPath(){
 		return numOfPath;
 	}
-	ShortestPath(Graph<UndirectedWeightedGraph> graph, String startNodeId, String endNodeId) {
+	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) {
 		
 		//ArrayList< ArrayList<String>> pathList = new ArrayList< ArrayList<String>>();
 		
@@ -123,7 +123,7 @@ public class ShortestPath {
 			// other wise we have these information
 			length = distance.get(endNodeId);
 			//numOfPath = this.getNumPath(precedence, startNodeId, endNodeId);
-			pathList = this.getPathList(precedence, startNodeId, endNodeId);
+			pathList = this.findPathList(precedence, startNodeId, endNodeId);
 			numOfPath = pathList.size();
 		}
 		
@@ -133,7 +133,7 @@ public class ShortestPath {
 	}
 	
 	// get the list of path from precedence HashMap
-	public ArrayList< ArrayList<String> > getPathList(HashMap<String, HashSet<String>> precedence, String startId, String endId) {
+	private ArrayList< ArrayList<String> > findPathList(HashMap<String, HashSet<String>> precedence, String startId, String endId) {
 		ArrayList< ArrayList<String> > pathList = new ArrayList< ArrayList<String> >();
 		
 		// recursive method: the pathList of the endNode is all paths of its preceding nodes with the endNode itself in the last index
@@ -148,7 +148,7 @@ public class ShortestPath {
 		else {
 			for (String nodeId : precedence.get(endId)) {
 				// for every path of its preceding node
-				for (ArrayList<String> prePath : getPathList(precedence, startId, nodeId)) {
+				for (ArrayList<String> prePath : findPathList(precedence, startId, nodeId)) {
 					// add endId to the end of the list
 					prePath.add(endId);
 					// then add the path to pathList

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public interface Graph<T> {
+public interface Graph {
 	
 	void addNode(String id, Node node);
 	void addNode(Node node);
@@ -20,11 +20,6 @@ public interface Graph<T> {
 	HashMap<String, Edge> getEdgeList();
 	
 	ArrayList<Node> getNeighbor(Node node);
-	T getDFS(Node startNode);
 	
-	boolean isConnected();
-	
-	ArrayList<Object> getDijkstraTree(String startNodeId);
-	double getDiameter();
 	
 }
