@@ -9,7 +9,7 @@ public class Arguments {
 	private String fileName;
 	
 	// get, set
-	public ArrayList< ArrayList<String> > getTaskAnalised() {
+	public ArrayList< ArrayList<String> > getTaskAnalysed() {
 		return taskAnalysed;
 	}
 	

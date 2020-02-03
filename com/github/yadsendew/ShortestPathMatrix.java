@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class ShortestPathMatrix {
     private HashMap< String, HashMap< String, ShortestPath>> shortestPathMatrix;
-    ShortestPathMatrix(Graph<UndirectedWeightedGraph> graph) {
+    ShortestPathMatrix(UndirectedWeightedGraph graph) {
 		shortestPathMatrix = new HashMap< String, HashMap< String, ShortestPath> >();
 		
 		ArrayList<String> nodeArrayList = new ArrayList<String>( graph.getNodeList().keySet() );
@@ -15,7 +15,7 @@ public class ShortestPathMatrix {
 			String startId = nodeArrayList.get(i);
 			shortestPathMatrix.put(startId, new HashMap< String, ShortestPath>());
 			
-			for (int j = i + 1; j < nodeArrayList.size(); j++) {
+			for (int j = i; j < nodeArrayList.size(); j++) {
 				
 				String endId = nodeArrayList.get(j);
 				

@@ -1,6 +1,7 @@
 package com.github.yadsendew;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class Node {
 	
@@ -35,6 +36,9 @@ public class Node {
 	
 	public HashMap<Node, Edge> getNeighbors(){
 		return this.neighbors;
+	}
+	public Set<Node> getNeighborsKeySet() {
+		return this.neighbors.keySet();
 	}
 	
 	public void addNeighbor(Node newNode, Edge newEdge) {

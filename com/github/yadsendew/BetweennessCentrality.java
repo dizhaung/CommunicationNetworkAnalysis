@@ -24,9 +24,9 @@ public class BetweennessCentrality {
 			}
 			
 			// for each end node, different from start node, nodeId
-			for (int j = i + 1; j < nodeArrayList.size(); j++) {
+			for (int j = i; j < nodeArrayList.size(); j++) {
 				String endId = nodeArrayList.get(j);
-				if (endId.equals(nodeId) || endId.equals(startId)) {
+				if (endId.equals(nodeId) ) {
 					continue;
 				}
 				
