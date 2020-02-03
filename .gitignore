@@ -3,3 +3,4 @@
 *.pages
 /bin/
 .vscode/launch.json
+.vscode/settings.json
