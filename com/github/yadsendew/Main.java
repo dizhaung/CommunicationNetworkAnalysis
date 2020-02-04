@@ -1,3 +1,15 @@
+/*
+*	In the purpose of project "Communication Network Analysis"
+*	of the "Advanced OOP with Java" course - WS1920 
+*	Computer Science Department – Frankfurt University of Applied Sciences
+*	
+*	Authors: 
+*		Ngo Minh Thong, 
+*		Luu Nguyen Phat, 
+*		Tran Huu Le Huy,
+*		Nguyen Quynh Huong.
+*/
+
 package com.github.yadsendew;
 
 import com.github.yadsendew.GraphParser;
@@ -68,7 +80,6 @@ public class Main {
 					}
 					
 					// get the list of shortest path then choose the 1st as the default path
-					@SuppressWarnings("unchecked")
 					ShortestPath shortestPathInfo = new ShortestPath(graph, startId, endId);
 					ArrayList< ArrayList<String>> shortestPathList = shortestPathInfo.getPathList();
 					ArrayList<String> shortestPath = shortestPathList.get(0);	// get the 1st path to print to the cmd
@@ -105,6 +116,7 @@ public class Main {
 		else {	// Export to file
 			// Output to XML format
 			GraphWriter.exportToXML(graph, myArgs.getOutputFileList().get(0));
+			System.out.println(System.currentTimeMillis() - startPoint);
 			// Output to normal text
 			//GraphWriter.exportToText(graph, myArgs.getOutputFileList().get(1));
 		}

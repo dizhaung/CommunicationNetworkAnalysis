@@ -15,7 +15,7 @@ public class ShortestPathMatrix {
 			String startId = nodeArrayList.get(i);
 			shortestPathMatrix.put(startId, new HashMap< String, ShortestPath>());
 			
-			for (int j = i; j < nodeArrayList.size(); j++) {
+			for (int j = 0; j < nodeArrayList.size(); j++) {
 				
 				String endId = nodeArrayList.get(j);
 				
