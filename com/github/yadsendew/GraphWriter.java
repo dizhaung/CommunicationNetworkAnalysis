@@ -16,6 +16,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 public class GraphWriter {
+      
       public static void exportToText(UndirectedWeightedGraph graph, String path){
             System.out.println("\nExported with file name: " + path);
       }
@@ -118,7 +119,9 @@ public class GraphWriter {
             for (String startId : allNodeIdList){ // from start node
                   for (String endId : allNodeIdList){ // to end node
                         // get a list of shortest paths
+                        //System.out.println(startId + " " +endId);
                         ShortestPath pathList = graph.getShortestPathMatrix().getShortestPath(startId, endId);
+                        //System.out.println(pathList);
                         double len = pathList.getLength();
                         // get one shortest path from the list
                         ArrayList<String> path = pathList.getPathList().get(0);

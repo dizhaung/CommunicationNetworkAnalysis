@@ -16,25 +16,75 @@ import com.github.yadsendew.GraphParser;
 import com.github.yadsendew.GraphWriter;
 import com.github.yadsendew.ShortestPath;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Main {
-    public static void main(String[] args){
-		
+	public static void main(String[] args) {
+
 		long startPoint = System.currentTimeMillis();
 
+		// analyse the arguments
 		Arguments myArgs = new Arguments();
-        myArgs.analyse(args);
-		
+		myArgs.analyse(args);
+
 		// // Specify path of file name
 		String path = "resources/" + myArgs.getFileName();
-		System.out.println(myArgs.getFileName());
 
-    	// Parse graphml to graph object
+		// Parse graphml to graph object
 		UndirectedWeightedGraph graph = GraphParser.parse(path);
-		
-		
-		if (myArgs.getOutputFileList().size() == 0) {	// output in command line
+
+		if (myArgs.getOutputFileList().size() == 0) { // output in command line
+
+			ExecutingThread thread = new ExecutingThread();
+			thread.start();
+
+
+			// ArrayList of output from the other task from the user
+			ArrayList<Object> outputOtherTask = new ArrayList<Object>();
+			for (ArrayList<String> task : myArgs.getTaskAnalysed()) {
+				// find shortest path between 2 nodes
+				if (task.get(0).equals("-s")) {
+
+					String startId = task.get(1);
+					String endId = task.get(2);
+					// check if id are valid
+					if (!graph.containsNode(startId)) {
+						System.out.println("There is no node ID " + startId);
+						System.exit(0);
+					}
+					if (!graph.containsNode(endId)) {
+						System.out.println("There is no node ID " + endId);
+						System.exit(0);
+					}
+
+					// get the list of shortest path then choose the 1st as the default path
+					ShortestPath shortestPathInfo = new ShortestPath(graph, startId, endId);
+
+					outputOtherTask.add(shortestPathInfo);
+				}
+				// betweenness centrality measure
+				else if (task.get(0).equals("-b")) {
+					String nodeId = task.get(1);
+					// check if id is valid
+					if (!graph.containsNode(nodeId)) {
+						System.out.println("There is no node ID " + nodeId);
+						System.exit(0);
+					}
+
+					BetweennessCentrality bCentrality = new BetweennessCentrality(graph, nodeId);
+					outputOtherTask.add(bCentrality);
+				} // end BCM
+			}
+
+			thread.interrupt();
+
+			// sleep 1 milisecond
+			// try {
+			// 	Thread.sleep(1);
+			// } catch (InterruptedException e) {
+			// 	// TODO Auto-generated catch block
+			// 	e.printStackTrace();
+			// }
+
 			// 1. Print all attributes of the graph
 			System.out.println("### Graph attributes ###");
 			// get number of node
@@ -50,42 +100,34 @@ public class Main {
 			System.out.println("\t" + "Edge IDs: " + graph.getEdgeId());
 			
 			// check connectivity
-			System.out.println("\t" + "Graph " + ( Connectivity.isConnected(graph) == true ? "is" : "is not") + "connected" );
+			System.out.println("\t" + "Graph " + ( Connectivity.isConnected(graph) == true ? "is" : "is not") + " connected" );
 			
 			// get diameter
 			System.out.println("\t" + "Gragh diameter: " + Diameter.calculate(graph));
-			System.out.println(System.currentTimeMillis() - startPoint);
+
+			System.out.println(thread.isAlive());
+			
 			
 			
 			// 4. other task
-			for (ArrayList<String> task : myArgs.getTaskAnalysed()) {
+			for (Object output : outputOtherTask) {
+
 				// 4.1 find shortest path between 2 nodes
-				if ( task.get(0).equals("-s") ) {
-					System.out.println("### Shortest path ###");
+				if ( output.getClass() == ShortestPath.class ) {
+					ShortestPath sp = (ShortestPath) output;
+
+					System.out.println("### Shortest path ###");					
 					
-					// get the ArrayList of nodeList
-					//ArrayList<String> nodeIdList = new ArrayList<String>( graph.getNodeList().keySet() );
-					
-					
-					String startId = task.get(1);
-					String endId = task.get(2);
+					String startId = sp.getSrc();
+					String endId = sp.getDst();
 					// check if id are valid
-					if ( !graph.containsNode(startId) ) {
-						System.out.println("There is no node ID " + startId);
-						System.exit(0);
-					}
-					if ( !graph.containsNode(endId) ) {
-						System.out.println("There is no node ID " + endId);
-						System.exit(0);
-					}
 					
 					// get the list of shortest path then choose the 1st as the default path
-					ShortestPath shortestPathInfo = new ShortestPath(graph, startId, endId);
-					ArrayList< ArrayList<String>> shortestPathList = shortestPathInfo.getPathList();
+					ArrayList< ArrayList<String>> shortestPathList = sp.getPathList();
 					ArrayList<String> shortestPath = shortestPathList.get(0);	// get the 1st path to print to the cmd
-					double length = (Double) shortestPathInfo.getLength();
+					double length = (Double) sp.getLength();
 					
-					System.out.print("Shortest path " + startId + " to " + endId);
+					System.out.print("\t" + "Shortest path " + startId + " to " + endId);
 					System.out.print(": path -> " + shortestPath);
 					System.out.println("; length -> " + length);
 					
@@ -94,37 +136,36 @@ public class Main {
 				}	// end shortest path
 				
 				// 4.2 betweenness centrality measure
-				else if ( task.get(0).equals("-b") ) {
+				else if ( output.getClass() == BetweennessCentrality.class ) {
+					BetweennessCentrality bcm = (BetweennessCentrality) output;
 					System.out.println("### Betweenness centrality ###");
 					
-					String nodeId = task.get(1);
-					// check if id is valid
-					if ( !graph.containsNode(nodeId) ) {
-						System.out.println("There is no node ID " + nodeId);
-						System.exit(0);
-					}
-					
-					BetweennessCentrality bCentrality = new BetweennessCentrality(graph, nodeId);
-					System.out.println("Node " + nodeId + ": " + bCentrality.getBCM());
-					System.out.println(System.currentTimeMillis() - startPoint);
-					
+					String nodeId = bcm.getNodeId();
+
+					System.out.println("\t" + "Node " + nodeId + ": " + bcm.getBCM());					
 				}	// end BCM
 			}	// end for loop 
-			
+
+			System.out.println("Number of thread: " + java.lang.Thread.activeCount());
 		}	// end CMD
 		
 		else {	// Export to file
+			ExecutingThread thread = new ExecutingThread();
+			thread.start();
+
 			// Output to XML format
 			GraphWriter.exportToXML(graph, myArgs.getOutputFileList().get(0));
 			System.out.println(System.currentTimeMillis() - startPoint);
 			// Output to normal text
 			//GraphWriter.exportToText(graph, myArgs.getOutputFileList().get(1));
+			
+			thread.interrupt();
 		}
 
 		// End of running time
 		System.out.println("----------------------------------------");
 		System.out.print("Executed time: ");
         System.out.println(System.currentTimeMillis() - startPoint);
-        
-    }
+	}
+	
 }

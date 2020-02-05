@@ -6,23 +6,47 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ShortestPath {
+	private String src;
+	private String dst;
 	private ArrayList<ArrayList<String>> pathList = new ArrayList<ArrayList<String>>();
 	private int numOfPath = 0;
 	private double length = 0;
 
-	
+	public void setSrc(String startId) {
+		src = startId;
+	}
+	public void setDst(String endId) {
+		dst = endId;
+	}
+	public String getSrc() {
+		return src;
+	}
+	public String getDst() {
+		return dst;
+	}
 	public ArrayList<ArrayList<String>> getPathList() {
 		return pathList;
 	}
 	public double getLength(){
 		return length;
 	}
-	public double getNumOfPath(){
+	public int getNumOfPath(){
 		return numOfPath;
+	}
+	ShortestPath(ShortestPath sp) {
+		src = sp.getSrc();
+		dst = sp.getDst();
+		pathList = new ArrayList<ArrayList<String>>();
+		for (ArrayList<String> path : sp.getPathList()) {
+			pathList.add( new ArrayList<>(path) );
+		}
+		numOfPath = sp.getNumOfPath();
+		length = sp.getLength();
 	}
 	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) {
 		
-		//ArrayList< ArrayList<String>> pathList = new ArrayList< ArrayList<String>>();
+		src = startNodeId;
+		dst = endNodeId;
 		
 		if (endNodeId.equals(startNodeId)) {
 			length = 0;

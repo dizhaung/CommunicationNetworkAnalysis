@@ -1,11 +1,21 @@
 package com.github.yadsendew;
 
-public class ExecutingThread implements Runnable {
-
+public class ExecutingThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Executing");
+        System.out.print("Processing content");
+        while (this.interrupted() == false) {
+            try {
+                Thread.sleep(1000);
+                System.out.print(".");
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                
+                this.interrupt();
+            }
+        }
+        System.out.println();
     }
-
+    
 }

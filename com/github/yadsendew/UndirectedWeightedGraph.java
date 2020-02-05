@@ -32,10 +32,13 @@ public class UndirectedWeightedGraph implements Graph {
 		shortestPathMatrix = new ShortestPathMatrix(this);
 	}
 	public ShortestPathMatrix getShortestPathMatrix() {
+		long sss = System.currentTimeMillis();
 		if (shortestPathMatrix == null || change){
 			shortestPathMatrix = new ShortestPathMatrix(this);
 			change = false;
+			System.out.println("Get SPMatrix: " + Long.toString(System.currentTimeMillis() - sss));
 		}
+		
 		return shortestPathMatrix;
 	}
 

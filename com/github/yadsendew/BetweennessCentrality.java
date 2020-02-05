@@ -3,12 +3,18 @@ package com.github.yadsendew;
 import java.util.ArrayList;
 
 public class BetweennessCentrality {
+	String nodeId;
 	double bcm;
 	
+	public String getNodeId() {
+		return nodeId;
+	}
 	public double getBCM(){
 		return bcm;
 	}
 	BetweennessCentrality(UndirectedWeightedGraph graph, String nodeId) {
+
+		this.nodeId = nodeId;
 		
 		ArrayList<String> nodeArrayList = new ArrayList<String>( graph.getNodeList().keySet() );
 		
@@ -31,6 +37,8 @@ public class BetweennessCentrality {
 				}
 				
 				// find the number and the list of shortest path between 1st and 2nd node
+				// System.out.println(startId + " " + endId);
+				// System.out.println(sMatrix.getShortestPath(startId, endId));
 				ShortestPath shortestPath = sMatrix.getShortestPath(startId, endId);
 				ArrayList<ArrayList<String>> pathList = shortestPath.getPathList();
 					
