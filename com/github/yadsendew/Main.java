@@ -27,8 +27,28 @@ public class Main {
 		// Parse graphml to graph object
 		UndirectedWeightedGraph graph = GraphParser.parse(path);
 
+		// 1. Print all attributes of the graph
+		System.out.println("### Graph attributes ###");
+		// get number of node
+		System.out.println("\t" + "Number of nodes: " + graph.getTotalNodes());
+		
+		// get number of edge
+		System.out.println("\t" + "Number of edges: " + graph.getTotalEdges());
+		
+		// print all vertices's ID
+		System.out.println("\t" + "Vertex IDs: " + graph.getNodeId());
+		
+		// 3. print all edges's ID
+		System.out.println("\t" + "Edge IDs: " + graph.getEdgeId());
+		
+		// check connectivity
+		System.out.println("\t" + "Connectivity: " + ( Connectivity.isConnected(graph) == true ? "YES" : "NO"));
+		
+		// get diameter
+		System.out.println("\t" + "Diameter: " + Diameter.calculate(graph));
+
 		// Controller - from analysed arguments then calling tasks
-		if (myArgs.getOutputFileList().size() == 0) { // output in command line
+		if (myArgs.getOutputFile() == null) { // output in command line
 
 			// ArrayList of output from the other task from the user
 			ArrayList<Object> outputOtherTask = new ArrayList<Object>();
@@ -66,26 +86,6 @@ public class Main {
 					outputOtherTask.add(bCentrality);
 				} // end BCM
 			}
-
-			// 1. Print all attributes of the graph
-			System.out.println("### Graph attributes ###");
-			// get number of node
-			System.out.println("\t" + "Number of nodes: " + graph.getTotalNodes());
-			
-			// get number of edge
-			System.out.println("\t" + "Number of edges: " + graph.getTotalEdges());
-			
-			// print all vertices's ID
-			System.out.println("\t" + "Vertex IDs: " + graph.getNodeId());
-			
-			// 3. print all edges's ID
-			System.out.println("\t" + "Edge IDs: " + graph.getEdgeId());
-			
-			// check connectivity
-			System.out.println("\t" + "Graph " + ( Connectivity.isConnected(graph) == true ? "is" : "is not") + " connected" );
-			
-			// get diameter
-			System.out.println("\t" + "Gragh diameter: " + Diameter.calculate(graph));
 			
 			// 4. other task
 			for (Object output : outputOtherTask) {
@@ -130,14 +130,13 @@ public class Main {
 		else {	// Export to file
 			ExecutingThread thread = new ExecutingThread();
 			thread.start();
-			ArrayList<String> outputFileList = myArgs.getOutputFileList();
+			String outputFileList = myArgs.getOutputFile();
 			System.out.println("Writing file...");
-			for (String pathOut : outputFileList) {
-				if (pathOut.contains(".xml") || pathOut.contains(".graphml")){
-					GraphWriter.exportToXML(graph, path, pathOut);
-				} else {
-					GraphWriter.exportToText(graph, path, pathOut);
-				}
+			
+			if (outputFileList.contains(".xml") || outputFileList.contains(".graphml")){
+				GraphWriter.exportToXML(graph, path, outputFileList);
+			} else {
+				GraphWriter.exportToText(graph, path, outputFileList);
 			}
 			System.out.println("Written file(s): " + outputFileList);
 			// Output to XML format

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Arguments {
 	private ArrayList<ArrayList<String>> taskAnalysed = new ArrayList<ArrayList<String>>();
-	private ArrayList<String> outputFileList = new ArrayList<String>();
+	private String outputFile;
 	private boolean isInputValid = true;
 	private String fileName;
 
@@ -14,8 +14,8 @@ public class Arguments {
 		return taskAnalysed;
 	}
 
-	public ArrayList<String> getOutputFileList() {
-		return outputFileList;
+	public String getOutputFile() {
+		return outputFile;
 	}
 
 	public String getFileName() {
@@ -111,14 +111,13 @@ public class Arguments {
 			isInputValid = false;
 			return false;
 		} else {
-			outputFileList.add(taskArray[index + 1]); // add the required output file
+			outputFile = taskArray[index + 1]; // add the required output file
 		}
 
 		return true;
 	}
 
 	public void analyse(String[] taskArray) {
-
 		// check if the argument array is empty
 		checkEmptyArg(taskArray);
 
@@ -129,38 +128,28 @@ public class Arguments {
 		Thread a = new Thread(new ReadFileThread(fileName));
 		a.start();
 
-		for (int index = 0; index < taskArray.length; index++) {
-			// irrelevant task
-			if (taskArray[index].charAt(0) == '-' && !taskArray[index].equals("-s") && !taskArray[index].equals("-a")
-					&& !taskArray[index].equals("-b")) {
-				// begin with '-' but is not '-s', '-a', '-b'
-				System.out.println("Unknown task " + taskArray[index] + ". Try -s, -a or -b.");
-			}
-			// relevant task
-			else if (taskArray[index].equals("-s")) { // task -s
+		for (int index = 1; index < taskArray.length; index++) {
+			
+			if (taskArray[index].equals("-s")) { // task -s
 				if (analyseS(taskArray, index) == true) {
 					index += 2;
 				}
-			} // end else if
+			}
 			else if (taskArray[index].equals("-b")) { // task -b
 				if (analyseB(taskArray, index) == true) {
 					index += 1;
 				}
-			} // end else if
+			}
 			else if (taskArray[index].equals("-a")) { // task -a
 				if (analyseA(taskArray, index) == true) {
 					index += 1;
 				}
-			} // end else if
-
+			} else if (taskArray[index].charAt(0) == '-' && !taskArray[index].equals("-s") && !taskArray[index].equals("-a")
+			&& !taskArray[index].equals("-b")) { // unknown task
+				// begin with '-' but is not '-s', '-a', '-b'
+				System.out.println("Unknown task " + taskArray[index] + ". Try -s, -a or -b.");
+			}
 		} // end for loop
-
-		// try {
-		// 	Thread.sleep(3000);
-		// } catch (InterruptedException e) {
-		// 	// TODO Auto-generated catch block
-		// 	e.printStackTrace();
-		// }
 
 		a.interrupt();
 	}

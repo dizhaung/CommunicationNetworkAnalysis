@@ -36,7 +36,7 @@ public class GraphWriter {
                   // check connectivity
                   myWriter.write("\t" + "Graph " + ( Connectivity.isConnected(graph) == true ? "is" : "is not") + " connected\n" );
                   // get diameter
-                  myWriter.write("\t" + "Gragh diameter: " + Diameter.calculate(graph) + '\n');
+                  myWriter.write("\t" + "Graph diameter: " + Diameter.calculate(graph) + '\n');
                   
                   myWriter.write("### Shortest paths ###\n");					
                   ArrayList<String> allNodeIdList = graph.getNodeId();
