@@ -15,7 +15,6 @@ public class UndirectedWeightedGraph implements Graph {
 	private String edgeDefault;
 	private String id;
 	private ShortestPathMatrix shortestPathMatrix;
-	private boolean change = false;	// to check if their is a need to change the shortestPathMatrix in some method
 	
 	private HashMap< String, Double > bcmMap = new HashMap< String, Double >();
 	
@@ -32,13 +31,9 @@ public class UndirectedWeightedGraph implements Graph {
 		shortestPathMatrix = new ShortestPathMatrix(this);
 	}
 	public ShortestPathMatrix getShortestPathMatrix() {
-		long sss = System.currentTimeMillis();
-		if (shortestPathMatrix == null || change){
+		if (shortestPathMatrix == null){
 			shortestPathMatrix = new ShortestPathMatrix(this);
-			change = false;
-			System.out.println("Get SPMatrix: " + Long.toString(System.currentTimeMillis() - sss));
 		}
-		
 		return shortestPathMatrix;
 	}
 
@@ -56,7 +51,6 @@ public class UndirectedWeightedGraph implements Graph {
 	public void addNode(Node node) {
 		nodeList.put(node.getId(), node);
 		nodeId.add(node.getId());
-		change = true;
 	}
 	/*
 	addEdge function adds an edge to the graph
@@ -66,11 +60,21 @@ public class UndirectedWeightedGraph implements Graph {
 		edgeList.put(edge.getId(), edge);
 		edgeId.add(edge.getId());
 		// add neighbor for src and dst
-		Node srcNode = nodeList.get(edge.getSrc());
-		Node dstNode = nodeList.get(edge.getDst());
-		srcNode.addNeighbor(dstNode, edge);
-		dstNode.addNeighbor(srcNode, edge);
-		change = true;
+		// try catch block
+		try {
+			Node srcNode = nodeList.get(edge.getSrc());
+			Node dstNode = nodeList.get(edge.getDst());
+			srcNode.addNeighbor(dstNode, edge);
+			dstNode.addNeighbor(srcNode, edge);
+		} catch (Exception e){
+			System.out.println("ERROR: Insert an edge that has either source or destination not existed. The edge was ignored.");
+		}
+		// end try catch block
+		// Node srcNode = nodeList.get(edge.getSrc());
+		// Node dstNode = nodeList.get(edge.getDst());
+		// srcNode.addNeighbor(dstNode, edge);
+		// dstNode.addNeighbor(srcNode, edge);
+		// change = true;
 	}
 	
 	public Node getNode(String id) {

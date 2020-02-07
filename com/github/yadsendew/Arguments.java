@@ -32,14 +32,13 @@ public class Arguments {
 
 	private void checkFileExistance(String fileName) {
 		this.fileName = fileName;
-
-		System.out.println(System.getProperty("user.dir"));
 		String path = "resources/" + fileName;
 		File f = new File(path);
 
 		// check if the file argument exist, exit if not found
 		if (!f.exists()) {
-			System.out.println("The file does not exist.");
+			System.out.print("The input file does not exist. \nPlease make sure it is located at: \"");
+			System.out.println(System.getProperty("user.dir") + "/resources/\" folder.");
 			System.exit(0);
 		}
 	}

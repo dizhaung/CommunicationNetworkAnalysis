@@ -19,24 +19,16 @@ import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
-
-		long startPoint = System.currentTimeMillis();
-
 		// analyse the arguments
 		Arguments myArgs = new Arguments();
 		myArgs.analyse(args);
-
 		// // Specify path of file name
 		String path = "resources/" + myArgs.getFileName();
-
 		// Parse graphml to graph object
 		UndirectedWeightedGraph graph = GraphParser.parse(path);
 
+		// Controller - from analysed arguments then calling tasks
 		if (myArgs.getOutputFileList().size() == 0) { // output in command line
-
-			ExecutingThread thread = new ExecutingThread();
-			thread.start();
-
 
 			// ArrayList of output from the other task from the user
 			ArrayList<Object> outputOtherTask = new ArrayList<Object>();
@@ -75,16 +67,6 @@ public class Main {
 				} // end BCM
 			}
 
-			thread.interrupt();
-
-			// sleep 1 milisecond
-			// try {
-			// 	Thread.sleep(1);
-			// } catch (InterruptedException e) {
-			// 	// TODO Auto-generated catch block
-			// 	e.printStackTrace();
-			// }
-
 			// 1. Print all attributes of the graph
 			System.out.println("### Graph attributes ###");
 			// get number of node
@@ -104,10 +86,6 @@ public class Main {
 			
 			// get diameter
 			System.out.println("\t" + "Gragh diameter: " + Diameter.calculate(graph));
-
-			System.out.println(thread.isAlive());
-			
-			
 			
 			// 4. other task
 			for (Object output : outputOtherTask) {
@@ -152,20 +130,24 @@ public class Main {
 		else {	// Export to file
 			ExecutingThread thread = new ExecutingThread();
 			thread.start();
-
+			ArrayList<String> outputFileList = myArgs.getOutputFileList();
+			System.out.println("Writing file...");
+			for (String pathOut : outputFileList) {
+				if (pathOut.contains(".xml") || pathOut.contains(".graphml")){
+					GraphWriter.exportToXML(graph, path, pathOut);
+				} else {
+					GraphWriter.exportToText(graph, path, pathOut);
+				}
+			}
+			System.out.println("Written file(s): " + outputFileList);
 			// Output to XML format
-			GraphWriter.exportToXML(graph, myArgs.getOutputFileList().get(0));
-			System.out.println(System.currentTimeMillis() - startPoint);
+			//GraphWriter.exportToXML(graph, myArgs.getOutputFileList().get(0));
+			//System.out.println(System.currentTimeMillis() - startPoint);
 			// Output to normal text
-			//GraphWriter.exportToText(graph, myArgs.getOutputFileList().get(1));
+			
 			
 			thread.interrupt();
 		}
-
-		// End of running time
-		System.out.println("----------------------------------------");
-		System.out.print("Executed time: ");
-        System.out.println(System.currentTimeMillis() - startPoint);
 	}
 	
 }
