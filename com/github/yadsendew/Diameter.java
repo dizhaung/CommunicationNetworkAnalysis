@@ -4,9 +4,20 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HashMap;
 
+/**
+ * The Class Diameter.
+ */
 public class Diameter {
+    
+    /** Store the diameter of the graph. */
     double diameter;
 
+    /**
+     * Calculate the diameter of the graph.
+     *
+     * @param graph the graph
+     * @return the diameter
+     */
     public static double calculate(UndirectedWeightedGraph graph) {
         // make a copy of the graph
 		UndirectedWeightedGraph copyGraph = new UndirectedWeightedGraph(graph);

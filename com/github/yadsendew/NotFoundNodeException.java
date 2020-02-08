@@ -7,8 +7,7 @@ public class NotFoundNodeException extends Exception {
      */
     private static final long serialVersionUID = 1L;
 
-    NotFoundNodeException() {
-    }
+    NotFoundNodeException() {}
 
     NotFoundNodeException(String msg) {
         super(msg);

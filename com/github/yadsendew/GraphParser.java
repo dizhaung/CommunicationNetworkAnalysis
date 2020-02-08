@@ -7,17 +7,44 @@ import java.io.File;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
+/**
+ * The Class GraphParser.
+ */
 public class GraphParser extends DefaultHandler {
+   
+   /** Return true if current reading element is a node element. */
    boolean bNodeKey = false;
+   
+   /** Return true if current reading element is a edge ID element. */
    boolean bEdgeId = false;
+   
+   /** Return true if current reading element is a edge weight element. */
    boolean bEdgeWeight = false;
+   
+   /** Create new undirected weighted graph. */
    static UndirectedWeightedGraph undirectedWeightedGraph = new UndirectedWeightedGraph();
+   
+   /** Store new node ID. */
    static String newNodeId;
+   
+   /** Store new edge ID. */
    static String newEdgeId;
+   
+   /** Store new edge source. */
    static String newEdgeSrc;
+   
+   /** Store new edge destination. */
    static String newEdgeDst;
+   
+   /** Store new edge weight. */
    static double newEdgeWeight;
 
+   /**
+    * Parses the input file to graph
+    *
+    * @param path input file name
+    * @return the undirected weighted graph
+    */
    public static UndirectedWeightedGraph parse(String path) {
       try {
          File inputFile = new File(path);
@@ -30,6 +57,16 @@ public class GraphParser extends DefaultHandler {
       }
       return undirectedWeightedGraph;
    }   
+   
+   /**
+    * Start element.
+    *
+    * @param uri the uri
+    * @param localName the local name
+    * @param qName the q name
+    * @param attributes the attributes
+    * @throws SAXException the SAX exception
+    */
    @Override
    public void startElement(String uri, 
    String localName, String qName, Attributes attributes) throws SAXException {
@@ -54,6 +91,14 @@ public class GraphParser extends DefaultHandler {
       
    }
 
+   /**
+    * End element.
+    *
+    * @param uri the uri
+    * @param localName the local name
+    * @param qName the q name
+    * @throws SAXException the SAX exception
+    */
    @Override
    public void endElement(String uri, 
    String localName, String qName) throws SAXException {
@@ -68,6 +113,14 @@ public class GraphParser extends DefaultHandler {
       }
    }
 
+   /**
+    * Characters.
+    *
+    * @param ch the character
+    * @param start the start
+    * @param length the length
+    * @throws SAXException the SAX exception
+    */
    @Override
    public void characters(char ch[], int start, int length) throws SAXException {
       if (bNodeKey){

@@ -17,8 +17,19 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
+/**
+ * The Class GraphWriter writes all graph properties.
+ */
 public class GraphWriter {
       
+      /**
+       * Export to text file.
+       *
+       * @param graph   the graph to be written
+       * @param pathIn  the input file name
+       * @param pathOut the output file name
+       * @throws NotFoundNodeException
+       */
       public static void exportToText(UndirectedWeightedGraph graph, String pathIn, String pathOut)
                   throws NotFoundNodeException {
             try {
@@ -72,6 +83,14 @@ public class GraphWriter {
                   e.printStackTrace();
             }   
       }
+      
+      /**
+       * Export to XML file.
+       *
+       * @param graph the graph to be written
+       * @param pathIn the input file name
+       * @param pathOut the output file name
+       */
       public static void exportToXML(UndirectedWeightedGraph graph, String pathIn, String pathOut) {
 
             DocumentBuilderFactory icFactory = DocumentBuilderFactory.newInstance();
@@ -142,6 +161,14 @@ public class GraphWriter {
                   e.printStackTrace();
             }
       }
+      
+      /**
+       * Adds the element node.
+       *
+       * @param doc the doc
+       * @param graphElement the graph element
+       * @param nodeId the node id
+       */
       private static void addElementNode(Document doc, Element graphElement, String nodeId) {
             Element nodeElement = doc.createElement("node");
             nodeElement.setAttribute("id", 'n' + nodeId);
@@ -151,6 +178,14 @@ public class GraphWriter {
             nodeElement.appendChild(data);
             graphElement.appendChild(nodeElement);
       }
+      
+      /**
+       * Adds the element edge.
+       *
+       * @param doc the doc
+       * @param graphElement the graph element
+       * @param edge the edge
+       */
       private static void addElementEdge(Document doc, Element graphElement, Edge edge) {
             Element edgeElement = doc.createElement("edge");
             edgeElement.setAttribute("source", 'n' + edge.getSrc());
@@ -165,6 +200,15 @@ public class GraphWriter {
             edgeElement.appendChild(data2);
             graphElement.appendChild(edgeElement);
       }
+      
+      /**
+       * Gets the element shortest path.
+       *
+       * @param doc   the doc
+       * @param graph the graph
+       * @return the element shortest path
+       * @throws NotFoundNodeException
+       */
       private static Node getElementShortestPath(Document doc, UndirectedWeightedGraph graph)
                   throws NotFoundNodeException {
             Element shortestPathElement = doc.createElement("shortestPath");
@@ -188,6 +232,18 @@ public class GraphWriter {
             }
             return shortestPathElement;
       }
+      
+      /**
+       * Gets the graph path element.
+       *
+       * @param doc the doc
+       * @param element the element
+       * @param src the source
+       * @param dst the destination
+       * @param len the length
+       * @param path the path
+       * @return the path element
+       */
       private static Node getPathElement(Document doc, Element element, String src, String dst, double len, ArrayList<String> path) {
             Element pathElement = doc.createElement("path");
             pathElement.setAttribute("source", src);
@@ -198,17 +254,40 @@ public class GraphWriter {
             pathElement.appendChild(doc.createTextNode("[" + pathString + "]"));
             return pathElement;
       }
+      
+      /**
+       * Gets the element total node.
+       *
+       * @param doc the doc
+       * @param graph the graph
+       * @return the element total node
+       */
       private static Node getElementTotalNode(Document doc, UndirectedWeightedGraph graph){
             Element totalNode = doc.createElement("totalNode");
             totalNode.setAttribute("value", Integer.toString(graph.getTotalNodes()));
             return totalNode;
       }
+      
+      /**
+       * Gets the element total edge.
+       *
+       * @param doc the doc
+       * @param graph the graph
+       * @return the element total edge
+       */
       private static Node getElementTotalEdge(Document doc, UndirectedWeightedGraph graph){
             Element totalEdge = doc.createElement("totalEdge");
             totalEdge.setAttribute("value", Integer.toString(graph.getTotalEdges()));
             return totalEdge;
       }
 
+      /**
+       * Gets the element connectivity.
+       *
+       * @param doc the doc
+       * @param graph the graph
+       * @return the element connectivity
+       */
       private static Node getElementConnectivity(Document doc, UndirectedWeightedGraph graph){
             Element connectivityElement = doc.createElement("connectivity");
             boolean connectivityValue = Connectivity.isConnected(graph);
@@ -216,6 +295,13 @@ public class GraphWriter {
             return connectivityElement;
       }
 
+      /**
+       * Gets the element diameter.
+       *
+       * @param doc the document
+       * @param graph the graph
+       * @return the element diameter
+       */
       private static Node getElementDiameter(Document doc, UndirectedWeightedGraph graph){
             Element diameterElement = doc.createElement("diameter");
             double diameterValue = Diameter.calculate(graph);
@@ -223,6 +309,14 @@ public class GraphWriter {
             return diameterElement;
       }
 
+      /**
+       * Gets the element Betweenness Centrality Measure.
+       *
+       * @param doc   the document
+       * @param graph the graph
+       * @return the element Betweenness Centrality Measure
+       * @throws NotFoundNodeException
+       */
       private static Node getElementBCM(Document doc, UndirectedWeightedGraph graph) throws NotFoundNodeException {
             Element bCentralityElement = doc.createElement("betweennessCentrality");
             ArrayList<String> allNodeIdList = graph.getNodeId();

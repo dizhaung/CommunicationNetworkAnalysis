@@ -3,20 +3,45 @@ package com.github.yadsendew;
 import java.io.File;
 import java.util.ArrayList;
 
+
+/**
+ * The Class Arguments.
+ */
 public class Arguments {
+	
+	/** Store analysed task. */
 	private ArrayList<ArrayList<String>> taskAnalysed = new ArrayList<ArrayList<String>>();
+	
+	/** Return true if the input is valid */
 	private boolean isInputValid = true;
+	
+	/** Store the file name. */
 	private String fileName;
 
+	/**
+	 * Gets the analysed task.
+	 *
+	 * @return the analysed task
+	 */
 	// get, set
 	public ArrayList<ArrayList<String>> getTaskAnalysed() {
 		return taskAnalysed;
 	}
 
+	/**
+	 * Gets the file name.
+	 *
+	 * @return the file name
+	 */
 	public String getFileName() {
 		return fileName;
 	}
 
+	/**
+	 * Check if there is no argument
+	 *
+	 * @param taskArray stores input arguments
+	 */
 	private void checkEmptyArg(String[] taskArray) {
 		// if there is no argument, stop the program
 		if (taskArray.length == 0) {
@@ -25,12 +50,17 @@ public class Arguments {
 		}
 	}
 
+	/**
+	 * Check if the file exists.
+	 *
+	 * @param fileName the file name
+	 */
 	private void checkFileExistance(String fileName) {
 		this.fileName = fileName;
 		String path = "resources/" + fileName;
 		File f = new File(path);
 
-		// check if the file argument exist, exit if not found
+		// check if the file argument exist, exit if it is not found
 		if (!f.exists()) {
 			System.out.print("The input file does not exist. \nPlease make sure it is located at: \"");
 			System.out.println(System.getProperty("user.dir") + "/resources/\" folder.");
@@ -38,6 +68,13 @@ public class Arguments {
 		}
 	}
 
+	/**
+	 * Analyse the argument -s, to check the format of shortest path between 2 vertices calculation.
+	 *
+	 * @param taskArray stores input arguments
+	 * @param index points out where the list of output file begin.
+	 * @return true, if successful
+	 */
 	private boolean analyseS(String[] taskArray, int index) {
 		// analyse -s, find the shortest path between 2 vertices
 		// -s needs 2 nodes
@@ -68,6 +105,13 @@ public class Arguments {
 		return true;
 	}
 
+	/**
+	 * Analyse -b, to check the format of betweenness centrality measurement.
+	 *
+	 * @param taskArray stores input arguments
+	 * @param index points out where the list of output file begin.
+	 * @return true, if successful
+	 */
 	private boolean analyseB(String[] taskArray, int index) {
 		// analyse -b, find the betweenness centrality of a vertice
 		// -b needs 1 node
@@ -92,6 +136,13 @@ public class Arguments {
 		return true;
 	}
 
+	/**
+	 * Analyse -a, to check the format of outputing in a particular file.
+	 *
+	 * @param taskArray stores input arguments
+	 * @param index points out where the list of output file begin.
+	 * @return true, if successful
+	 */
 	private boolean analyseA(String[] taskArray, int index) {
 		// analyse -a, output in a particular file
 		// -a needs 1 file
@@ -127,6 +178,11 @@ public class Arguments {
 		return true;
 	}
 
+	/**
+	 * Analyse the input argument.
+	 *
+	 * @param taskArray stores input arguments
+	 */
 	public void analyse(String[] taskArray) {
 		// check if the argument array is empty
 		checkEmptyArg(taskArray);
@@ -154,6 +210,7 @@ public class Arguments {
 			&& !taskArray[index].equals("-b")) { // unknown task
 				// begin with '-' but is not '-s', '-a', '-b'
 				System.out.println("Unknown task " + taskArray[index] + ". Try -s, -a or -b.");
+				isInputValid = false;
 			}
 		} // end for loop
 

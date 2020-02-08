@@ -138,7 +138,6 @@ public class Main {
 					
 					String startId = sp.getSrc();
 					String endId = sp.getDst();
-					// check if id are valid
 					
 					// get the list of shortest path then choose the 1st as the default path
 					ArrayList< ArrayList<String>> shortestPathList = sp.getPathList();
@@ -160,17 +159,18 @@ public class Main {
 					
 					String nodeId = bcm.getNodeId();
 
-					System.out.println("\t" + "Node " + nodeId + ": " + bcm.getBCM());					
+					System.out.println("\t" + "Node " + nodeId + ": " + bcm.getBCM());	
+					
+					System.out.println();
 				}	// end BCM
 				else if ( output.getClass() == String.class ) {
 					System.out.println("### Output file ###");
 					System.out.println("Written file(s): " + output );
+
+					System.out.println();
 				}
 			}
 		}	// end for loop 
-
-
-
 		
 	}
 	

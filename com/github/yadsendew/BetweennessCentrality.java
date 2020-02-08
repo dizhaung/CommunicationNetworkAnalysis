@@ -2,16 +2,26 @@ package com.github.yadsendew;
 
 import java.util.ArrayList;
 
+
+/**
+ * The Class BetweennessCentrality calculate the betweenness centrality of the node of the graph.
+ */
 public class BetweennessCentrality {
+	
+	/** Store the ID of the node. */
 	String nodeId;
+	
+	/** Store the betweenness centrality measure. */
 	double bcm;
 	
-	public String getNodeId() {
-		return nodeId;
-	}
-	public double getBCM(){
-		return bcm;
-	}
+	
+	/**
+	 * Calculate the betweenness centrality measure.
+	 *
+	 * @param graph  the graph
+	 * @param nodeId the ID of the node
+	 * @throws NotFoundNodeException
+	 */
 	BetweennessCentrality(UndirectedWeightedGraph graph, String nodeId) throws NotFoundNodeException {
 
 		this.nodeId = nodeId;
@@ -60,4 +70,22 @@ public class BetweennessCentrality {
 			}
 		}
 	}
+	/**
+	 * Gets the ID of the node.
+	 *
+	 * @return the ID of the node.
+	 */
+	public String getNodeId() {
+		return nodeId;
+	}
+	
+	/**
+	 * Gets the betweenness centrality measure.
+	 *
+	 * @return the betweenness centrality measure
+	 */
+	public double getBCM(){
+		return bcm;
+	}
+
 }
