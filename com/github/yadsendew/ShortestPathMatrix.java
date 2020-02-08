@@ -28,10 +28,11 @@ public class ShortestPathMatrix {
 		}
 
 		for (int i = 0; i < nodeArrayList.size(); i++) {
+			//System.out.println(i + " run");
 			String startId = nodeArrayList.get(i);
 			
 			// divide the task into 3 threads
-			int numOfThread = 2;
+			int numOfThread = 5;
 			ArrayList<UndirectedUnweightedSPThread> threadList = new ArrayList<UndirectedUnweightedSPThread>();
 			
 
@@ -48,20 +49,26 @@ public class ShortestPathMatrix {
 				
 				// wait until these thread finish
 				for (UndirectedUnweightedSPThread thread : threadList) {
-					while( thread.isAlive() ) {
-						//System.out.println("shit");
-					}	// loop until the thread is not alive
+					while( thread.isAlive() ) {}	// loop until the thread is not alive
+				}
+
+				try {
+					Thread.sleep(1);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 			} else {
-				double dif = (double) (nodeArrayList.size() - i ) / numOfThread;
-				ArrayList<Integer> endIndexList = new ArrayList<Integer>();
-				endIndexList.add(i);
-
 				
 
+				double dif = (double) (nodeArrayList.size() - i ) / numOfThread;
+				
+				ArrayList<Integer> endIndexList = new ArrayList<Integer>();
+				endIndexList.add(i);
 				for (int j = 1; j <= numOfThread; j++) {
 					endIndexList.add( (int) Math.ceil(i + j * dif) );
 				}
+
 				threadList = new ArrayList<UndirectedUnweightedSPThread>();
 				for (int j = 0; j < numOfThread; j++) {
 					int start = endIndexList.get(j);
@@ -72,16 +79,25 @@ public class ShortestPathMatrix {
 					
 					//System.out.println(start + " " + end + " " + (start == end));
 					threadList.add( new UndirectedUnweightedSPThread(i, start, end, graph, shortestPathMatrix, nodeArrayList) );
-					threadList.get(j).setName(j);
+					//threadList.get(j).setName(j);
 					threadList.get(j).start();
 					
 					
 				}
 
 				for (UndirectedUnweightedSPThread thread : threadList) {
-					while( thread.isAlive() ) {
-						//System.out.println("more shit");
-					}	// loop until the thread is not alive
+					while( thread.isAlive() ) {}	// loop until the thread is not alive
+
+				}
+				
+
+
+
+				try {
+					Thread.sleep(1);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 			}
 

@@ -2,7 +2,7 @@ package com.github.yadsendew;
 
 public class Main1 {
 
-    
+	
     // public static void main(final String[] args) {
     //     final long startPoint = System.currentTimeMillis();
 		

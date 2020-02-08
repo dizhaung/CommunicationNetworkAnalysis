@@ -47,11 +47,15 @@ public class UndirectedUnweightedSPThread extends Thread {
                     Collections.reverse(path);
                 }
 
+                System.out.print( (shortestPathReverse == null) ? "NUll" : "" );
+
                 shortestPathMatrix.get(endId).put(startId, shortestPathReverse);
                 
             }
 
         } // END LOOP
+
+        //System.out.println(index + " stop");
 
         // try {
         //     Thread.sleep(1000);
