@@ -16,8 +16,6 @@ public class UndirectedWeightedGraph implements Graph {
 	private String id;
 	private ShortestPathMatrix shortestPathMatrix;
 	
-	private HashMap< String, Double > bcmMap = new HashMap< String, Double >();
-	
 	// Constructors
 	public UndirectedWeightedGraph()	{}
 	
@@ -27,10 +25,10 @@ public class UndirectedWeightedGraph implements Graph {
 		edgeDefault = undirectedWeightedGraph.getEdgeDefault();
 		id = undirectedWeightedGraph.getId();
 	}
-	public void calculateShortestPathMatrix () {
+	public void calculateShortestPathMatrix () throws NotFoundNodeException {
 		shortestPathMatrix = new ShortestPathMatrix(this);
 	}
-	public ShortestPathMatrix getShortestPathMatrix() {
+	public ShortestPathMatrix getShortestPathMatrix() throws NotFoundNodeException {
 		if (shortestPathMatrix == null){
 			shortestPathMatrix = new ShortestPathMatrix(this);
 		}
@@ -70,11 +68,6 @@ public class UndirectedWeightedGraph implements Graph {
 			System.out.println("ERROR: Insert an edge that has either source or destination not existed. The edge was ignored.");
 		}
 		// end try catch block
-		// Node srcNode = nodeList.get(edge.getSrc());
-		// Node dstNode = nodeList.get(edge.getDst());
-		// srcNode.addNeighbor(dstNode, edge);
-		// dstNode.addNeighbor(srcNode, edge);
-		// change = true;
 	}
 	
 	public Node getNode(String id) {

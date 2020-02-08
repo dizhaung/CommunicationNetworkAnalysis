@@ -43,8 +43,15 @@ public class ShortestPath {
 		numOfPath = sp.getNumOfPath();
 		length = sp.getLength();
 	}
-	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) {
+	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) throws NotFoundNodeException {
 		
+		if (!graph.containsNode(startNodeId)) {
+			throw new NotFoundNodeException(graph, startNodeId);
+		}		
+		if (!graph.containsNode(endNodeId)) {
+			throw new NotFoundNodeException(graph, endNodeId);
+		}	
+
 		src = startNodeId;
 		dst = endNodeId;
 		
@@ -149,10 +156,8 @@ public class ShortestPath {
 				pathList = this.findPathList(precedence, startNodeId, endNodeId);
 				numOfPath = pathList.size();
 			}
-		}
-		// return length, number of shortest paths and pathList
-		
-		
+			
+		}	// END ELSE		
 	}
 	
 	// get the list of path from precedence HashMap

@@ -20,6 +20,7 @@ public class Diameter {
 		// loop for every node in the list
 		for (String nodeId : nodeIdList) {
 			
+			@SuppressWarnings("unchecked")
 			HashSet<Double> distance = new HashSet<Double>( ( (HashMap<String, Double>) Dijkstra.getDijkstraTree(copyGraph, nodeId).get(1) ).values() );
 			for (double i : distance) {
 				if (i != Double.MAX_VALUE && i > diameter) {

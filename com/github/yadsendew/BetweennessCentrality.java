@@ -12,14 +12,16 @@ public class BetweennessCentrality {
 	public double getBCM(){
 		return bcm;
 	}
-	BetweennessCentrality(UndirectedWeightedGraph graph, String nodeId) {
+	BetweennessCentrality(UndirectedWeightedGraph graph, String nodeId) throws NotFoundNodeException {
 
 		this.nodeId = nodeId;
+
+		if (!graph.containsNode(nodeId)) {
+			throw new NotFoundNodeException(graph, nodeId);
+		}
 		
 		ArrayList<String> nodeArrayList = new ArrayList<String>( graph.getNodeList().keySet() );
-		
-		// for each start node, different from nodeId
-		
+				
 		ShortestPathMatrix sMatrix = graph.getShortestPathMatrix();
 
 		for (int i = 0; i < nodeArrayList.size(); i++) {

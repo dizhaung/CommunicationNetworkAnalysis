@@ -5,17 +5,12 @@ import java.util.ArrayList;
 
 public class Arguments {
 	private ArrayList<ArrayList<String>> taskAnalysed = new ArrayList<ArrayList<String>>();
-	private String outputFile;
 	private boolean isInputValid = true;
 	private String fileName;
 
 	// get, set
 	public ArrayList<ArrayList<String>> getTaskAnalysed() {
 		return taskAnalysed;
-	}
-
-	public String getOutputFile() {
-		return outputFile;
 	}
 
 	public String getFileName() {
@@ -45,14 +40,14 @@ public class Arguments {
 
 	private boolean analyseS(String[] taskArray, int index) {
 		// analyse -s, find the shortest path between 2 vertices
-		// -s needs two nodes
-		if (index == taskArray.length - 1 || taskArray[index + 1].equals("-s") || taskArray[index + 1].equals("-a")
-				|| taskArray[index + 1].equals("-b")) {
-			System.out.println("The task " + taskArray[index] + "has no argument. 2 are needed.");
+		// -s needs 2 nodes
+		if (index == taskArray.length - 1 || taskArray[index + 1].charAt(0) == '-') {
+			// if -s is the last argument or the next is a task
+			System.out.println("The task " + taskArray[index] + " has no argument. 2 are needed.");
 			isInputValid = false;
 			return false;
-		} else if (index == taskArray.length - 2 || taskArray[index + 2].equals("-s")
-				|| taskArray[index + 2].equals("-a") || taskArray[index + 2].equals("-b")) {
+		} else if (index == taskArray.length - 2 || taskArray[index + 2].charAt(0) == '-') {
+			// if only 1 argument left or the the second arg from -s is a task
 			System.out.println("The task " + taskArray[index] + " has only 1 argument. 2 are needed.");
 			isInputValid = false;
 			return false;
@@ -76,13 +71,13 @@ public class Arguments {
 	private boolean analyseB(String[] taskArray, int index) {
 		// analyse -b, find the betweenness centrality of a vertice
 		// -b needs 1 node
-		if (index == taskArray.length - 1 || taskArray[index + 1].equals("-s") || taskArray[index + 1].equals("-a")
-				|| taskArray[index + 1].equals("-b")) {
+		if (index == taskArray.length - 1 || taskArray[index + 1].charAt(0) == '-') {
+			// if -b is the last argument or the next is a task
 			System.out.println("The task " + taskArray[index] + " has no argument. 1 are needed");
 			isInputValid = false;
 			return false;
-		} else if (index != taskArray.length - 2 && !taskArray[index + 2].equals("-s")
-				&& !taskArray[index + 2].equals("-a") && !taskArray[index + 2].equals("-b")) {
+		} else if (index != taskArray.length - 2 && taskArray[index + 2].charAt(0) != '-') {
+			// if the seconf argument from -b is a task
 			System.out.println("The task " + taskArray[index] + " has more than 1 argument.");
 			isInputValid = false;
 			return false;
@@ -100,18 +95,33 @@ public class Arguments {
 	private boolean analyseA(String[] taskArray, int index) {
 		// analyse -a, output in a particular file
 		// -a needs 1 file
-		if (index == taskArray.length - 1 || taskArray[index + 1].equals("-s") || taskArray[index + 1].equals("-a")
-				|| taskArray[index + 1].equals("-b")) {
+		if (index == taskArray.length - 1 || taskArray[index + 1].charAt(0) == '-') {
+			// if '-a' is the last argument or the next argument is a task
 			System.out.println("The task " + taskArray[index] + " has no argument. 1 are needed");
 			isInputValid = false;
 			return false;
-		} else if (index != taskArray.length - 2 && !taskArray[index + 2].equals("-s")
-				&& !taskArray[index + 2].equals("-a") && !taskArray[index + 2].equals("-b")) {
-			System.out.println("The task " + taskArray[index] + " has only 1 argument. 2 are needed");
-			isInputValid = false;
-			return false;
 		} else {
-			outputFile = taskArray[index + 1]; // add the required output file
+
+			// run loop while the taskArray is not end and the argument does not begin with
+			// '-'
+			while (true) { // while
+				index += 1;
+
+				ArrayList<String> task = new ArrayList<String>();
+				task.add("-a"); // add -a
+				task.add(taskArray[index]); // add node
+
+				if (!taskAnalysed.contains(task)) {
+					taskAnalysed.add(task);
+				}
+
+				if (index == taskArray.length - 1)
+					break;
+
+				if (taskArray[index + 1].charAt(0) == '-')
+					break;
+			}
+
 		}
 
 		return true;
@@ -124,9 +134,7 @@ public class Arguments {
 		// check if the file argument exist before doing stuff
 		checkFileExistance(taskArray[0]);
 
-		//ReadFileThread a = new ReadFileThread(fileName);
-		Thread a = new Thread(new ReadFileThread(fileName));
-		a.start();
+
 
 		for (int index = 1; index < taskArray.length; index++) {
 			
@@ -141,9 +149,7 @@ public class Arguments {
 				}
 			}
 			else if (taskArray[index].equals("-a")) { // task -a
-				if (analyseA(taskArray, index) == true) {
-					index += 1;
-				}
+				if (analyseA(taskArray, index) == true) {}
 			} else if (taskArray[index].charAt(0) == '-' && !taskArray[index].equals("-s") && !taskArray[index].equals("-a")
 			&& !taskArray[index].equals("-b")) { // unknown task
 				// begin with '-' but is not '-s', '-a', '-b'
@@ -151,6 +157,9 @@ public class Arguments {
 			}
 		} // end for loop
 
-		a.interrupt();
+		if (isInputValid == false) 
+			System.exit(0);
+
+		
 	}
 }

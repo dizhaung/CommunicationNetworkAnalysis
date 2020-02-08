@@ -18,77 +18,117 @@ import com.github.yadsendew.ShortestPath;
 import java.util.ArrayList;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NotFoundNodeException {
+
 		// analyse the arguments
 		Arguments myArgs = new Arguments();
 		myArgs.analyse(args);
 		// // Specify path of file name
 		String path = "resources/" + myArgs.getFileName();
 		// Parse graphml to graph object
+		Thread a = new Thread(new ReadFileThread(myArgs.getFileName()));
+		a.start();
 		UndirectedWeightedGraph graph = GraphParser.parse(path);
+		
+		a.interrupt();
+		try {	// wait for the interrupt finish
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
-		// 1. Print all attributes of the graph
-		System.out.println("### Graph attributes ###");
-		// get number of node
-		System.out.println("\t" + "Number of nodes: " + graph.getTotalNodes());
-		
-		// get number of edge
-		System.out.println("\t" + "Number of edges: " + graph.getTotalEdges());
-		
-		// print all vertices's ID
-		System.out.println("\t" + "Vertex IDs: " + graph.getNodeId());
-		
-		// 3. print all edges's ID
-		System.out.println("\t" + "Edge IDs: " + graph.getEdgeId());
-		
-		// check connectivity
-		System.out.println("\t" + "Connectivity: " + ( Connectivity.isConnected(graph) == true ? "YES" : "NO"));
-		
-		// get diameter
-		System.out.println("\t" + "Diameter: " + Diameter.calculate(graph));
+		if (myArgs.getTaskAnalysed().size() == 0) {
+			ExecutingThread thread = new ExecutingThread();
+			thread.start();
 
-		// Controller - from analysed arguments then calling tasks
-		if (myArgs.getOutputFile() == null) { // output in command line
+			// get all attributes of the graph
+			int nodeNum = graph.getTotalNodes();
+			int edgeNum = graph.getTotalNodes();
+			ArrayList<String> nodeIdList = graph.getNodeId();
+			ArrayList<String> edgeIdList = graph.getEdgeId();
+			boolean connectivity = Connectivity.isConnected(graph);
+			double diameter = Diameter.calculate(graph);
 
-			// ArrayList of output from the other task from the user
-			ArrayList<Object> outputOtherTask = new ArrayList<Object>();
+			thread.interrupt();
+			a.interrupt();
+			try {	// wait for the interrupt finish
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+
+			// Print all attributes of the graph if there are no task from the user
+			System.out.println("### Graph attributes ###");
+			// get number of node
+			System.out.println("\t" + "Number of nodes: " + nodeNum);
+			
+			// get number of edge
+			System.out.println("\t" + "Number of edges: " + edgeNum);
+			
+			// print all vertices's ID
+			System.out.println("\t" + "Vertex IDs: " + nodeIdList);
+			
+			// 3. print all edges's ID
+			System.out.println("\t" + "Edge IDs: " + edgeIdList);
+			
+			// check connectivity
+			System.out.println("\t" + "Graph is" + ( connectivity == true ? " " : "not ") + "connected");
+			
+			// get diameter
+			System.out.println("\t" + "Gragh diameter: " + diameter);
+		}
+		else {
+			ExecutingThread thread = new ExecutingThread();
+			thread.start();
+
+			ArrayList<Object> outputTask = new ArrayList<Object>();
 			for (ArrayList<String> task : myArgs.getTaskAnalysed()) {
 				// find shortest path between 2 nodes
 				if (task.get(0).equals("-s")) {
 
 					String startId = task.get(1);
 					String endId = task.get(2);
-					// check if id are valid
-					if (!graph.containsNode(startId)) {
-						System.out.println("There is no node ID " + startId);
-						System.exit(0);
-					}
-					if (!graph.containsNode(endId)) {
-						System.out.println("There is no node ID " + endId);
-						System.exit(0);
-					}
 
 					// get the list of shortest path then choose the 1st as the default path
 					ShortestPath shortestPathInfo = new ShortestPath(graph, startId, endId);
 
-					outputOtherTask.add(shortestPathInfo);
+					outputTask.add(shortestPathInfo);
 				}
 				// betweenness centrality measure
 				else if (task.get(0).equals("-b")) {
 					String nodeId = task.get(1);
-					// check if id is valid
-					if (!graph.containsNode(nodeId)) {
-						System.out.println("There is no node ID " + nodeId);
-						System.exit(0);
-					}
 
 					BetweennessCentrality bCentrality = new BetweennessCentrality(graph, nodeId);
-					outputOtherTask.add(bCentrality);
+					outputTask.add(bCentrality);
 				} // end BCM
+				else if (task.get(0).equals("-a")) {
+					String outputFile = task.get(1);	
+
+					if (outputFile.contains(".xml") || outputFile.contains(".graphml")){
+						GraphWriter.exportToXML(graph, path, outputFile);
+					} else {
+						GraphWriter.exportToText(graph, path, outputFile);
+					}
+					
+
+					outputTask.add(outputFile);
+				} // end write file
+			}
+
+			thread.interrupt();
+			try {	// wait for the interrupt finish
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 			
-			// 4. other task
-			for (Object output : outputOtherTask) {
+
+			// 4. print task in CMD
+			for (Object output : outputTask) {
 
 				// 4.1 find shortest path between 2 nodes
 				if ( output.getClass() == ShortestPath.class ) {
@@ -122,31 +162,16 @@ public class Main {
 
 					System.out.println("\t" + "Node " + nodeId + ": " + bcm.getBCM());					
 				}	// end BCM
-			}	// end for loop 
-
-			System.out.println("Number of thread: " + java.lang.Thread.activeCount());
-		}	// end CMD
-		
-		else {	// Export to file
-			ExecutingThread thread = new ExecutingThread();
-			thread.start();
-			String outputFileList = myArgs.getOutputFile();
-			System.out.println("Writing file...");
-			
-			if (outputFileList.contains(".xml") || outputFileList.contains(".graphml")){
-				GraphWriter.exportToXML(graph, path, outputFileList);
-			} else {
-				GraphWriter.exportToText(graph, path, outputFileList);
+				else if ( output.getClass() == String.class ) {
+					System.out.println("### Output file ###");
+					System.out.println("Written file(s): " + output );
+				}
 			}
-			System.out.println("Written file(s): " + outputFileList);
-			// Output to XML format
-			//GraphWriter.exportToXML(graph, myArgs.getOutputFileList().get(0));
-			//System.out.println(System.currentTimeMillis() - startPoint);
-			// Output to normal text
-			
-			
-			thread.interrupt();
-		}
+		}	// end for loop 
+
+
+
+		
 	}
 	
 }

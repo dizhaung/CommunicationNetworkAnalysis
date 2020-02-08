@@ -19,7 +19,8 @@ import org.w3c.dom.Node;
 
 public class GraphWriter {
       
-      public static void exportToText(UndirectedWeightedGraph graph, String pathIn, String pathOut){
+      public static void exportToText(UndirectedWeightedGraph graph, String pathIn, String pathOut)
+                  throws NotFoundNodeException {
             try {
                   FileWriter myWriter = new FileWriter(pathOut);
                   myWriter.write("Read in file: \'" + pathIn + "\'\n");
@@ -65,7 +66,7 @@ public class GraphWriter {
                         myWriter.write(bCentrality.getBCM() + "\n");
                   }
                   myWriter.close();
-                  System.out.println("\nExported with file name: " + pathOut);
+                  // System.out.println("\nExported with file name: " + pathOut);
             } catch (IOException e) {
                   System.out.println("An error occurred.");
                   e.printStackTrace();
@@ -135,7 +136,7 @@ public class GraphWriter {
                   StreamResult streamResult = new StreamResult(new File(pathOut));
                   transformer.transform(source, streamResult);
 
-                  System.out.println("\nExported in XML format with file name: " + pathOut);
+                  // System.out.println("\nExported in XML format with file name: " + pathOut);
 
             } catch (Exception e) {
                   e.printStackTrace();
@@ -164,7 +165,8 @@ public class GraphWriter {
             edgeElement.appendChild(data2);
             graphElement.appendChild(edgeElement);
       }
-      private static Node getElementShortestPath(Document doc, UndirectedWeightedGraph graph) {
+      private static Node getElementShortestPath(Document doc, UndirectedWeightedGraph graph)
+                  throws NotFoundNodeException {
             Element shortestPathElement = doc.createElement("shortestPath");
             ArrayList<String> allNodeIdList = graph.getNodeId();
             int totalNodes = allNodeIdList.size();
@@ -221,7 +223,7 @@ public class GraphWriter {
             return diameterElement;
       }
 
-      private static Node getElementBCM(Document doc, UndirectedWeightedGraph graph){
+      private static Node getElementBCM(Document doc, UndirectedWeightedGraph graph) throws NotFoundNodeException {
             Element bCentralityElement = doc.createElement("betweennessCentrality");
             ArrayList<String> allNodeIdList = graph.getNodeId();
             for (String nodeId : allNodeIdList){ // from for each node

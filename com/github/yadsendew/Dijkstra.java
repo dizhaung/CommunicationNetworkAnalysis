@@ -11,7 +11,7 @@ public class Dijkstra {
         UndirectedWeightedGraph dijkstraTree = new UndirectedWeightedGraph();
 		
 		// create a HashMap of updated distance from the starting node to every node
-		// initially it is   0, inf, inf, inf, ...
+		// initially it is 0, inf, inf, inf, ...
 		HashMap<String, Double> distance = new HashMap<String, Double>();	
 		for (String nodeId : graph.getNodeList().keySet()) {
 			if (nodeId.equals(startNodeId)) {
@@ -54,8 +54,6 @@ public class Dijkstra {
 			if (minUnvisitedLength == Double.MAX_VALUE) {
 				break;
 			}			
-	
-			// TODO: add code for updating the dijkstraTree
 			
 			// remove the node from unvisitedNode
 			unvisitedNode.remove(minUnvisitedNode);

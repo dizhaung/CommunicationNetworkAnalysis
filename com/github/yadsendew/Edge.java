@@ -1,4 +1,5 @@
 package com.github.yadsendew;
+
 import java.util.ArrayList;
 
 class Edge {

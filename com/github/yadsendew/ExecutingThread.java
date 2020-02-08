@@ -5,7 +5,7 @@ public class ExecutingThread extends Thread {
     @Override
     public void run() {
         System.out.print("Processing content");
-        while (this.interrupted() == false) {
+        while (Thread.interrupted() == false) {
             try {
                 Thread.sleep(1000);
                 System.out.print(".");
