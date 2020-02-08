@@ -1,6 +1,8 @@
 package com.github.yadsendew;
- 
+
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -17,10 +19,59 @@ import org.w3c.dom.Node;
 
 public class GraphWriter {
       
-      public static void exportToText(UndirectedWeightedGraph graph, String path){
-            System.out.println("\nExported with file name: " + path);
+      public static void exportToText(UndirectedWeightedGraph graph, String pathIn, String pathOut){
+            try {
+                  FileWriter myWriter = new FileWriter(pathOut);
+                  myWriter.write("Read in file: \'" + pathIn + "\'\n");
+                  myWriter.write("### Graph information ### \n");
+                  
+                  // get number of node
+                  myWriter.write("\t" + "Number of nodes: " + graph.getTotalNodes()+ '\n');
+                  // get number of edge
+                  myWriter.write("\t" + "Number of edges: " + graph.getTotalEdges()+ '\n');
+                  // print all vertices's ID
+                  myWriter.write("\t" + "Vertex IDs: " + graph.getNodeId()+ '\n');
+                  // 3. print all edges's ID
+                  myWriter.write("\t" + "Edge IDs: " + graph.getEdgeId()+ '\n');
+                  // check connectivity
+                  myWriter.write("\t" + "Graph " + ( Connectivity.isConnected(graph) == true ? "is" : "is not") + " connected\n" );
+                  // get diameter
+                  myWriter.write("\t" + "Graph diameter: " + Diameter.calculate(graph) + '\n');
+                  
+                  myWriter.write("### Shortest paths ###\n");					
+                  ArrayList<String> allNodeIdList = graph.getNodeId();
+                  int totalNodes = allNodeIdList.size();
+                  for (int i = 0; i < totalNodes; i++){ // from start node
+                        String startId = allNodeIdList.get(i);
+                        myWriter.write("\tSource node \'"+ startId +"\':\n");
+                        for (int j = i; j < totalNodes; j++){ // to end node
+                              String endId = allNodeIdList.get(j);
+                              // get a list of shortest paths from start node to end node
+                              ShortestPath pathList = graph.getShortestPathMatrix().getShortestPath(startId, endId);
+                              // length of paths
+                              double len = pathList.getLength();
+                              // get one shortest path from the list
+                              ArrayList<String> path = pathList.getPathList().get(0);
+                              // append element
+                              myWriter.write("\t\t" + "To node \'" + endId + "\': ");
+                              myWriter.write("path -> " + path);
+                              myWriter.write("; length -> " + len + "\n");
+                        }
+                  }
+                  myWriter.write("### Betweenness centrality ###\n");
+                  for (String nodeId : allNodeIdList){ // from for each node
+                        myWriter.write("\tNode \'"+ nodeId +"\': ");
+                        BetweennessCentrality bCentrality = new BetweennessCentrality(graph, nodeId);
+                        myWriter.write(bCentrality.getBCM() + "\n");
+                  }
+                  myWriter.close();
+                  System.out.println("\nExported with file name: " + pathOut);
+            } catch (IOException e) {
+                  System.out.println("An error occurred.");
+                  e.printStackTrace();
+            }   
       }
-      public static void exportToXML(UndirectedWeightedGraph graph, String path) {
+      public static void exportToXML(UndirectedWeightedGraph graph, String pathIn, String pathOut) {
 
             DocumentBuilderFactory icFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder icBuilder;
@@ -81,10 +132,10 @@ public class GraphWriter {
                   Transformer transformer = TransformerFactory.newInstance().newTransformer();
                   transformer.setOutputProperty(OutputKeys.INDENT, "yes"); 
                   DOMSource source = new DOMSource(doc);
-                  StreamResult streamResult = new StreamResult(new File(path));
+                  StreamResult streamResult = new StreamResult(new File(pathOut));
                   transformer.transform(source, streamResult);
 
-                  System.out.println("\nExported in XML format with file name: " + path);
+                  System.out.println("\nExported in XML format with file name: " + pathOut);
 
             } catch (Exception e) {
                   e.printStackTrace();
@@ -116,8 +167,11 @@ public class GraphWriter {
       private static Node getElementShortestPath(Document doc, UndirectedWeightedGraph graph) {
             Element shortestPathElement = doc.createElement("shortestPath");
             ArrayList<String> allNodeIdList = graph.getNodeId();
-            for (String startId : allNodeIdList){ // from start node
-                  for (String endId : allNodeIdList){ // to end node
+            int totalNodes = allNodeIdList.size();
+            for (int i = 0; i < totalNodes; i++){ // from start node
+                  String startId = allNodeIdList.get(i);
+                  for (int j = i; j < totalNodes; j++){ // to end node
+                        String endId = allNodeIdList.get(j);
                         // get a list of shortest paths
                         //System.out.println(startId + " " +endId);
                         ShortestPath pathList = graph.getShortestPathMatrix().getShortestPath(startId, endId);

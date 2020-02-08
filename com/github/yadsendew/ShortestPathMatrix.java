@@ -26,11 +26,13 @@ public class ShortestPathMatrix {
 				shortestPathMatrix.put(endId, new HashMap< String, ShortestPath>());
 			}
 		}
-
+		
 		for (int i = 0; i < nodeArrayList.size(); i++) {
 			//System.out.println(i + " run");
 			String startId = nodeArrayList.get(i);
 			
+			
+			/* Thread start here
 			// divide the task into 3 threads
 			int numOfThread = 5;
 			ArrayList<UndirectedUnweightedSPThread> threadList = new ArrayList<UndirectedUnweightedSPThread>();
@@ -102,32 +104,35 @@ public class ShortestPathMatrix {
 			}
 
 			
-			// for (int j = i; j < nodeArrayList.size(); j++) {
+			Thread end here*/
+
+			// Normal start
+			for (int j = i; j < nodeArrayList.size(); j++) {
                 
-			// 	String endId = nodeArrayList.get(j);
-			// 	//shortestPathMatrix.put(endId, new HashMap< String, ShortestPath>());
+				String endId = nodeArrayList.get(j);
+				//shortestPathMatrix.put(endId, new HashMap< String, ShortestPath>());
 				
-			// 	// list of shortest path from 1st node to 2nd node
-			// 	ShortestPath shortestPath = new ShortestPath(graph, startId, endId);
+				// list of shortest path from 1st node to 2nd node
+				ShortestPath shortestPath = new ShortestPath(graph, startId, endId);
 				
-			// 	shortestPathMatrix.get(startId).put(endId, shortestPath);
+				shortestPathMatrix.get(startId).put(endId, shortestPath);
 				
-			// 	// list of shortest path from 2nd node to 1st node
-			// 	if (i != j) {
-			// 		// make a copy of the shortestPath
-			// 		ShortestPath shortestPathReverse = new ShortestPath(shortestPath);
+				// list of shortest path from 2nd node to 1st node
+				if (i != j) {
+					// make a copy of the shortestPath
+					ShortestPath shortestPathReverse = new ShortestPath(shortestPath);
 	
-			// 		// reverse its attributes
-			// 		shortestPathReverse.setSrc(shortestPath.getDst());
-			// 		shortestPathReverse.setDst(shortestPath.getSrc());
-			// 		for (ArrayList<String> path : shortestPathReverse.getPathList()) {
-			// 			Collections.reverse(path);
-			// 		}
+					// reverse its attributes
+					shortestPathReverse.setSrc(shortestPath.getDst());
+					shortestPathReverse.setDst(shortestPath.getSrc());
+					for (ArrayList<String> path : shortestPathReverse.getPathList()) {
+						Collections.reverse(path);
+					}
 	
-			// 		shortestPathMatrix.get(endId).put(startId, shortestPathReverse);
-			// 	}
+					shortestPathMatrix.get(endId).put(startId, shortestPathReverse);
+				}
 							
-			// } 	// END LOOP
+			} 	// END LOOP
 			
 		}	// END LOOP
 	}
