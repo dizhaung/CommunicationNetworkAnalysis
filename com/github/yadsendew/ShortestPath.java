@@ -5,34 +5,94 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The Class ShortestPath.
+ */
 public class ShortestPath {
+	
+	/** Store the source of the edge. */
 	private String src;
+	
+	/** Store the destination of the edge. */
 	private String dst;
+	
+	/** Store the list of shortest paths. */
 	private ArrayList<ArrayList<String>> pathList = new ArrayList<ArrayList<String>>();
+	
+	/** Store the number of shortest paths. */
 	private int numOfPath = 0;
+	
+	/** Store the length of the shortest path. */
 	private double length = 0;
 
+	/**
+	 * Sets the source of the edge.
+	 *
+	 * @param startId the ID of the source node
+	 */
 	public void setSrc(String startId) {
 		src = startId;
 	}
+	
+	/**
+	 * Sets the destination of the edge.
+	 *
+	 * @param endId the ID of the destination node
+	 */
 	public void setDst(String endId) {
 		dst = endId;
 	}
+	
+	/**
+	 * Gets the ID of the source node.
+	 *
+	 * @return the ID of the source node
+	 */
 	public String getSrc() {
 		return src;
 	}
+	
+	/**
+	 * Gets the ID of the destination node.
+	 *
+	 * @return the ID of the destination node
+	 */
 	public String getDst() {
 		return dst;
 	}
+	
+	/**
+	 * Gets the list of shortest paths.
+	 *
+	 * @return the list of shortest paths
+	 */
 	public ArrayList<ArrayList<String>> getPathList() {
 		return pathList;
 	}
+	
+	/**
+	 * Gets the length of the shortest path.
+	 *
+	 * @return the length of the shortest path
+	 */
 	public double getLength(){
 		return length;
 	}
+	
+	/**
+	 * Gets the number of shortest paths.
+	 *
+	 * @return the number of shortest paths
+	 */
 	public int getNumOfPath(){
 		return numOfPath;
 	}
+	
+	/**
+	 * Find a shortest path.
+	 *
+	 * @param sp the shortest path
+	 */
 	ShortestPath(ShortestPath sp) {
 		src = sp.getSrc();
 		dst = sp.getDst();
@@ -43,6 +103,14 @@ public class ShortestPath {
 		numOfPath = sp.getNumOfPath();
 		length = sp.getLength();
 	}
+	
+	/**
+	 * Find a shortest path.
+	 *
+	 * @param graph the graph
+	 * @param startNodeId the ID of the start node
+	 * @param endNodeId the ID of the end node
+	 */
 	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) {
 		
 		src = startNodeId;
@@ -155,6 +223,14 @@ public class ShortestPath {
 		
 	}
 	
+	/**
+	 * Find the list of shortest paths.
+	 *
+	 * @param precedence the map of parents of node
+	 * @param startId the ID of start node 
+	 * @param endId the ID of end node
+	 * @return the list of shortest paths
+	 */
 	// get the list of path from precedence HashMap
 	private ArrayList< ArrayList<String> > findPathList(HashMap<String, HashSet<String>> precedence, String startId, String endId) {
 		ArrayList< ArrayList<String> > pathList = new ArrayList< ArrayList<String> >();

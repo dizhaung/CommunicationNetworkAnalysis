@@ -5,13 +5,26 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 
+/**
+ * The Class ShortestPathMatrix stores all shortest paths of the graph.
+ */
 public class ShortestPathMatrix {
+	
+	/** Store shortest path matrix. */
 	private HashMap< String, HashMap< String, ShortestPath>> shortestPathMatrix;
 
+	/**
+	 * Initialize a new shortest path matrix.
+	 */
 	ShortestPathMatrix() {
 		shortestPathMatrix = new HashMap< String, HashMap< String, ShortestPath>>();
 	}
 
+    /**
+     * Initialize a new shortest path matrix.
+     *
+     * @param graph the graph
+     */
     ShortestPathMatrix(UndirectedWeightedGraph graph) {
 		shortestPathMatrix = new HashMap< String, HashMap< String, ShortestPath> >();
 		
@@ -121,9 +134,22 @@ public class ShortestPathMatrix {
 		}	// END LOOP
 	}
 	
+    /**
+     * Gets the shortest path matrix.
+     *
+     * @return the shortest path matrix
+     */
     public HashMap< String, HashMap< String, ShortestPath>> getMatrix(){
         return shortestPathMatrix;
     }
+	
+	/**
+	 * Gets the shortest path.
+	 *
+	 * @param startId the ID of the start node
+	 * @param endId the ID of the end node
+	 * @return the shortest path
+	 */
 	public ShortestPath getShortestPath(String startId, String endId) {
 		return shortestPathMatrix.get(startId).get(endId);
 	} 

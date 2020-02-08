@@ -3,13 +3,29 @@ package com.github.yadsendew;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * The Class Connectivity.
+ */
 public class Connectivity {
+    
+    /** Store the connectivity, return true if the graph is connected. */
     boolean connectivity = false;
 
+    /**
+     * Gets the connectivity.
+     *
+     * @return the connectivity
+     */
     public boolean getConnectivity() {
         return connectivity;
     }
 
+    /**
+     * Checks if the graph is connected.
+     *
+     * @param graph the graph
+     * @return true, if the graph is connected
+     */
     public static boolean isConnected (UndirectedWeightedGraph graph) {
         // create a DFSTree from the graph to check graph connectivity
 		// choose a random node
