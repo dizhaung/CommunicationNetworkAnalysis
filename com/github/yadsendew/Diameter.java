@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class Diameter {
     
     /** Store the diameter of the graph. */
-    double diameter;
+    private double diameter;
 
     /**
      * Calculate the diameter of the graph.
@@ -38,8 +38,7 @@ public class Diameter {
 					diameter = i;
 				}
 			}
-			
-			
+		
 		}
 		// return the diameter
 		return diameter;

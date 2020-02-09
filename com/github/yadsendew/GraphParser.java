@@ -13,13 +13,13 @@ import javax.xml.parsers.SAXParserFactory;
 public class GraphParser extends DefaultHandler {
    
    /** Return true if current reading element is a node element. */
-   boolean bNodeKey = false;
+   private boolean bNodeKey = false;
    
    /** Return true if current reading element is a edge ID element. */
-   boolean bEdgeId = false;
+   private boolean bEdgeId = false;
    
    /** Return true if current reading element is a edge weight element. */
-   boolean bEdgeWeight = false;
+   private boolean bEdgeWeight = false;
    
    /** Create new undirected weighted graph. */
    static UndirectedWeightedGraph undirectedWeightedGraph = new UndirectedWeightedGraph();

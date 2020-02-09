@@ -30,10 +30,10 @@ public class UndirectedWeightedGraph implements Graph {
 	/** Store shortest path matrix. */
 	private ShortestPathMatrix shortestPathMatrix;
 	
+	// Constructors
 	/**
 	 * Create a new undirected weighted graph.
 	 */
-	// Constructors
 	public UndirectedWeightedGraph()	{}
 	
 	/**
@@ -75,7 +75,6 @@ public class UndirectedWeightedGraph implements Graph {
 	 *
 	 * @param id the new ID of the graph
 	 */
-	//
 	public void setId(String id) {
 		this.id = id;
 	}
