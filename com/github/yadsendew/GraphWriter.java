@@ -86,6 +86,7 @@ public class GraphWriter {
                   
             } catch (IOException e) {
                   LOGGER.info("An error occurred.");
+                  System.out.println("An error occurred.");
                   e.printStackTrace();
             }   
       }

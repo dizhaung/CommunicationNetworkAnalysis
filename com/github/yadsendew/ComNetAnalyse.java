@@ -124,6 +124,8 @@ public class ComNetAnalyse {
 				else if (task.get(0).equals("-b")) {
 					String nodeId = task.get(1);
 
+					LOGGER.info("Find betweenness centrality measurement of node " + nodeId);
+
 					BetweennessCentrality bCentrality = new BetweennessCentrality(graph, nodeId);
 					outputTask.add(bCentrality);
 				} // end BCM
