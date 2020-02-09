@@ -421,3 +421,168 @@ Feb 09, 2020 10:45:21 PM com.github.yadsendew.MyLogger info
 INFO: Program end successfully.
 
 
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.MyLogger info
+INFO: 
+
+***************Program has started running...***************
+
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
+INFO: Initialized "Arguments" class
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
+INFO: Checking empty argument...
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
+INFO: No empty argument passed.
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments checkFileExistance
+INFO: Input file check existence: OK
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
+INFO: Parsing next arguments...
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.MyLogger info
+INFO: Parsing graph from input file
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:0
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:1
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:2
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:3
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:4
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:5
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:6
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:7
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:8
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:9
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:10
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:11
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:12
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:13
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:14
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:0
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:1
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:2
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:3
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:4
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:5
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:6
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:7
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:8
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:9
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:10
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:11
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:12
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:13
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:14
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:15
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:16
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:17
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:18
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:19
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:20
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:21
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:22
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:23
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:24
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:25
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:26
+Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:27
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
+INFO: Find number of nodes
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
+INFO: Find number of edges
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
+INFO: Find all node id
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
+INFO: Find all edge id
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Connectivity isConnected
+INFO: Find graph connectivity
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.DepthFirstSearch getDFSTree
+INFO: get DFS Tree from 0
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Diameter calculate
+INFO: Find graph diameter
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 0
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 1
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 2
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 3
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 4
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 5
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 6
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 7
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 8
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 9
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 10
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 11
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 12
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 13
+Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
+INFO: get Dijkstra from 14
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print all attributes of the graph
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print the number of nodes
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print the number of edges
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print list of vertex IDs
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print list of edge IDs
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print the connectivity of the graph
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Print the diameter of the graph
+Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+INFO: Program end successfully.
+
+

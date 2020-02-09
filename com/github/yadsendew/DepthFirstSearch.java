@@ -9,7 +9,7 @@ public class DepthFirstSearch {
     
     public static UndirectedWeightedGraph getDFSTree(UndirectedWeightedGraph graph, String startNodeId) {
 
-		LOGGER.info("get DFS Tree from " + startNodeId);
+		LOGGER.info("get DFS Tree from node " + startNodeId);
 
         UndirectedWeightedGraph DFSTree = new UndirectedWeightedGraph();
 

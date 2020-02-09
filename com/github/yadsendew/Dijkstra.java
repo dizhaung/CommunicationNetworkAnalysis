@@ -13,7 +13,7 @@ public class Dijkstra {
 	
     public static ArrayList<Object> getDijkstraTree(UndirectedWeightedGraph graph, String startNodeId) {
 
-		LOGGER.info("get Dijkstra from " + startNodeId);
+		LOGGER.info("get Dijkstra from node " + startNodeId);
 
         UndirectedWeightedGraph dijkstraTree = new UndirectedWeightedGraph();
 		
