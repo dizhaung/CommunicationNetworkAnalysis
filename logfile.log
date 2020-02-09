@@ -1,588 +1,2550 @@
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.MyLogger info
+Feb 09, 2020 11:05:20 PM com.github.yadsendew.MyLogger info
 INFO: 
 
 ***************Program has started running...***************
 
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.Arguments analyse
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.Arguments analyse
 INFO: Initialized "Arguments" class
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.Arguments analyse
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.Arguments analyse
 INFO: Checking empty argument...
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.Arguments analyse
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.Arguments analyse
 INFO: No empty argument passed.
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.Arguments checkFileExistance
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.Arguments checkFileExistance
 INFO: Input file check existence: OK
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.Arguments analyse
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.Arguments analyse
 INFO: Parsing next arguments...
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.MyLogger info
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.MyLogger info
 INFO: Parsing graph from input file
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:0
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:1
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:2
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:3
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:4
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:5
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:6
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:7
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:8
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:9
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:10
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:11
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:12
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:13
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added node:14
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:15
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:16
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:17
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:18
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:19
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:20
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:21
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:22
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:23
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:24
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:25
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:26
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:27
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:28
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:29
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:30
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:31
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:32
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:33
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:34
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:35
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:36
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:37
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:38
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:39
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:40
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:41
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:42
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:43
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:44
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:45
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:46
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:47
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:48
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:49
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:50
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:51
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:52
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:53
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:54
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:55
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:56
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:57
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:58
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:59
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:60
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:61
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:62
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:63
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:64
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:65
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:66
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:67
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:68
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:69
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:70
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:71
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:72
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:73
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:74
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:75
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:76
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:77
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:78
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:79
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:80
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:81
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:82
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:83
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:84
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:85
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:86
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:87
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:88
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:89
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:90
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:91
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:92
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:93
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:94
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:95
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:96
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:97
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:98
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:99
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:100
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:101
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:102
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:103
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:104
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:105
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:106
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:107
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:108
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:109
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:110
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:111
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:112
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:113
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:114
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:115
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:116
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:117
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:118
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:119
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:120
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:121
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:122
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:123
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:124
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:125
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:126
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:127
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:128
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:129
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:130
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:131
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:132
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:133
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:134
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:135
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:136
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:137
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:138
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:139
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:140
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:141
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:142
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:143
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:144
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:145
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:146
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:147
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:148
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:149
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:150
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:151
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:152
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:153
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:154
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:155
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:156
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:157
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:158
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:159
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:160
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:161
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:162
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:163
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:164
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:165
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:166
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:167
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:168
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:169
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:170
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:171
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:172
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:173
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:174
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:175
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:176
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:177
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:178
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:179
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:180
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:181
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:182
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:183
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:184
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:185
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:186
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:187
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:188
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:189
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:190
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:191
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:192
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:193
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:194
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:195
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:196
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:197
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:198
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:199
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:200
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:201
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:202
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:203
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:204
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:205
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:206
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:207
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:208
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:209
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:210
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:211
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:212
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:213
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:214
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:215
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:216
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:217
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:218
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:219
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:220
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:221
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:222
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:223
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:224
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:225
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:226
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:227
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:228
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:229
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:230
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:231
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:232
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:233
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:234
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:235
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:236
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:237
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:238
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:239
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:240
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:241
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:242
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:243
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:244
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:245
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:246
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:247
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:248
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:249
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:0
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:1
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:2
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:3
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:4
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:5
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:6
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:7
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:8
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:9
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:10
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:11
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:12
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:13
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:14
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:15
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:16
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:17
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:18
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:19
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:20
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:21
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:22
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:23
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:24
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:25
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:26
-Feb 09, 2020 10:45:18 PM com.github.yadsendew.GraphParser endElement
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
 INFO: Added edge:27
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPathMatrix <init>
-INFO: Get shortest math matrix
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 11
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 12
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 13
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 14
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 11 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 12
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 13
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 14
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 12 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 13
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 14
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 13 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 14
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 14 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 0 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 2 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 3 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 4 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 5 to node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 5 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 5 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 5 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 5 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 5 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 6 to node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 6 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 6 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 6 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 6 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 7 to node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 7 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 7 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 7 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 8 to node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 8 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 8 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 9 to node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 9 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 10 to node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPathMatrix <init>
-INFO: Finish shortest path matrix
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.ShortestPath <init>
-INFO: Find shortest path from node 1 to node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.GraphWriter exportToXML
-INFO: Writing to XML file
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Connectivity isConnected
-INFO: Find graph connectivity
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.DepthFirstSearch getDFSTree
-INFO: get DFS Tree from 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Diameter calculate
-INFO: Find graph diameter
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 11
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 12
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 13
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 14
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 0
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:28
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:29
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:30
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:31
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:32
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:33
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:34
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:35
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:36
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:37
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:38
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:39
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:40
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:41
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:42
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:43
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:44
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:45
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:46
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:47
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:48
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:49
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:50
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:51
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:52
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:53
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:54
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:55
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:56
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:57
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:58
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:59
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:60
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:61
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:62
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:63
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:64
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:65
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:66
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:67
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:68
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:69
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:70
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:71
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:72
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:73
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:74
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:75
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:76
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:77
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:78
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:79
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:80
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:81
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:82
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:83
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:84
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:85
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:86
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:87
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:88
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:89
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:90
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:91
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:92
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:93
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:94
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:95
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:96
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:97
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:98
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:99
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:100
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:101
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:102
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:103
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:104
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:105
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:106
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:107
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:108
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:109
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:110
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:111
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:112
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:113
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:114
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:115
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:116
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:117
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:118
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:119
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:120
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:121
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:122
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:123
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:124
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:125
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:126
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:127
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:128
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:129
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:130
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:131
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:132
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:133
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:134
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:135
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:136
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:137
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:138
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:139
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:140
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:141
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:142
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:143
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:144
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:145
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:146
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:147
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:148
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:149
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:150
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:151
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:152
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:153
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:154
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:155
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:156
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:157
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:158
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:159
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:160
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:161
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:162
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:163
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:164
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:165
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:166
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:167
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:168
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:169
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:170
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:171
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:172
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:173
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:174
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:175
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:176
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:177
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:178
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:179
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:180
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:181
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:182
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:183
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:184
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:185
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:186
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:187
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:188
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:189
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:190
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:191
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:192
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:193
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:194
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:195
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:196
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:197
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:198
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:199
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:200
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:201
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:202
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:203
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:204
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:205
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:206
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:207
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:208
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:209
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:210
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:211
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:212
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:213
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:214
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:215
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:216
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:217
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:218
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:219
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:220
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:221
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:222
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:223
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:224
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:225
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:226
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:227
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:228
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:229
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:230
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:231
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:232
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:233
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:234
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:235
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:236
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:237
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:238
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:239
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:240
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:241
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:242
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:243
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:244
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:245
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:246
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:247
+Feb 09, 2020 11:05:21 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:248
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.MyLogger info
+INFO: 
+
+***************Program has started running...***************
+
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.Arguments analyse
+INFO: Initialized "Arguments" class
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.Arguments analyse
+INFO: Checking empty argument...
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.Arguments analyse
+INFO: No empty argument passed.
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.Arguments checkFileExistance
+INFO: Input file check existence: OK
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.Arguments analyse
+INFO: Parsing next arguments...
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.MyLogger info
+INFO: Parsing graph from input file
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:0
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:1
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:2
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:3
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:4
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:5
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:6
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:7
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:8
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:9
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:10
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:11
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:12
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:13
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:14
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:15
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:16
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:17
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:18
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:19
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:20
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:21
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:22
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:23
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:24
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:25
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:26
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:27
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:28
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:29
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:30
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:31
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:32
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:33
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:34
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:35
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:36
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:37
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:38
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:39
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:40
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:41
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:42
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:43
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:44
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:45
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:46
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:47
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:48
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:49
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:50
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:51
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:52
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:53
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:54
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:55
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:56
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:57
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:58
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:59
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:60
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:61
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:62
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:63
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:64
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:65
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:66
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:67
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:68
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:69
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:70
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:71
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:72
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:73
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:74
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:75
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:76
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:77
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:78
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:79
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:80
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:81
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:82
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:83
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:84
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:85
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:86
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:87
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:88
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:89
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:90
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:91
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:92
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:93
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:94
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:95
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:96
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:97
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:98
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:99
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:100
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:101
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:102
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:103
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:104
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:105
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:106
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:107
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:108
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:109
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:110
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:111
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:112
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:113
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:114
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:115
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:116
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:117
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:118
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:119
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:120
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:121
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:122
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:123
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:124
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:125
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:126
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:127
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:128
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:129
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:130
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:131
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:132
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:133
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:134
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:135
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:136
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:137
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:138
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:139
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:140
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:141
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:142
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:143
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:144
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:145
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:146
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:147
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:148
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:149
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:150
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:151
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:152
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:153
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:154
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:155
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:156
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:157
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:158
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:159
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:160
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:161
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:162
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:163
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:164
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:165
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:166
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:167
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:168
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:169
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:170
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:171
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:172
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:173
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:174
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:175
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:176
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:177
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:178
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:179
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:180
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:181
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:182
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:183
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:184
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:185
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:186
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:187
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:188
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:189
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:190
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:191
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:192
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:193
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:194
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:195
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:196
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:197
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:198
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:199
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:200
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:201
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:202
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:203
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:204
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:205
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:206
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:207
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:208
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:209
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:210
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:211
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:212
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:213
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:214
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:215
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:216
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:217
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:218
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:219
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:220
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:221
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:222
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:223
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:224
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:225
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:226
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:227
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:228
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:229
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:230
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:231
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:232
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:233
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:234
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:235
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:236
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:237
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:238
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:239
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:240
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:241
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:242
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:243
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:244
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:245
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:246
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:247
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:248
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added node:249
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:0
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:1
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:2
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:3
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:4
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:5
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:6
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:7
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:8
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:9
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:10
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:11
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:12
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:13
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:14
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:15
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:16
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:17
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:18
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:19
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:20
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:21
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:22
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:23
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:24
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:25
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:26
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:27
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:28
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:29
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:30
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:31
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:32
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:33
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:34
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:35
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:36
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:37
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:38
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:39
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:40
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:41
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:42
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:43
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:44
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:45
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:46
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:47
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:48
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:49
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:50
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:51
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:52
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:53
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:54
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:55
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:56
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:57
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:58
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:59
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:60
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:61
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:62
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:63
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:64
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:65
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:66
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:67
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:68
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:69
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:70
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:71
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:72
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:73
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:74
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:75
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:76
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:77
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:78
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:79
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:80
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:81
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:82
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:83
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:84
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:85
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:86
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:87
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:88
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:89
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:90
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:91
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:92
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:93
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:94
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:95
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:96
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:97
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:98
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:99
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:100
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:101
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:102
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:103
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:104
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:105
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:106
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:107
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:108
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:109
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:110
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:111
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:112
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:113
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:114
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:115
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:116
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:117
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:118
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:119
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:120
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:121
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:122
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:123
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:124
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:125
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:126
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:127
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:128
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:129
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:130
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:131
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:132
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:133
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:134
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:135
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:136
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:137
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:138
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:139
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:140
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:141
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:142
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:143
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:144
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:145
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:146
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:147
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:148
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:149
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:150
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:151
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:152
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:153
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:154
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:155
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:156
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:157
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:158
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:159
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:160
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:161
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:162
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:163
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:164
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:165
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:166
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:167
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:168
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:169
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:170
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:171
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:172
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:173
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:174
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:175
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:176
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:177
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:178
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:179
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:180
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:181
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:182
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:183
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:184
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:185
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:186
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:187
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:188
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:189
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:190
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:191
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:192
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:193
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:194
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:195
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:196
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:197
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:198
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:199
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:200
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:201
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:202
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:203
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:204
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:205
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:206
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:207
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:208
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:209
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:210
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:211
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:212
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:213
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:214
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:215
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:216
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:217
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:218
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:219
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:220
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:221
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:222
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:223
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:224
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:225
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:226
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:227
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:228
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:229
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:230
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:231
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:232
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:233
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:234
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:235
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:236
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:237
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:238
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:239
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:240
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:241
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:242
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:243
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:244
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:245
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:246
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:247
+Feb 09, 2020 11:05:41 PM com.github.yadsendew.GraphParser endElement
+INFO: Added edge:248
+Feb 09, 2020 11:05:42 PM com.github.yadsendew.BetweennessCentrality <init>
 INFO: Find betweenness centrality measurement of node 1
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 2
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 3
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 4
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 5
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 6
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 7
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 8
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 9
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 10
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 11
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 12
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 13
-Feb 09, 2020 10:45:19 PM com.github.yadsendew.BetweennessCentrality <init>
-INFO: Find betweenness centrality measurement of node 14
-Feb 09, 2020 10:45:21 PM com.github.yadsendew.MyLogger info
-INFO: Program end successfully.
-
-
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.MyLogger info
-INFO: 
-
-***************Program has started running...***************
-
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
-INFO: Initialized "Arguments" class
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
-INFO: Checking empty argument...
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
-INFO: No empty argument passed.
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments checkFileExistance
-INFO: Input file check existence: OK
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.Arguments analyse
-INFO: Parsing next arguments...
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.MyLogger info
-INFO: Parsing graph from input file
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:0
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:1
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:2
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:3
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:4
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:5
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:6
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:7
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:8
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:9
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:10
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:11
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:12
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:13
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added node:14
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:0
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:1
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:2
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:3
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:4
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:5
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:6
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:7
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:8
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:9
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:10
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:11
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:12
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:13
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:14
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:15
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:16
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:17
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:18
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:19
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:20
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:21
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:22
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:23
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:24
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:25
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:26
-Feb 09, 2020 10:48:12 PM com.github.yadsendew.GraphParser endElement
-INFO: Added edge:27
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
-INFO: Find number of nodes
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
-INFO: Find number of edges
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
-INFO: Find all node id
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.MyLogger info
-INFO: Find all edge id
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Connectivity isConnected
+Feb 09, 2020 11:05:42 PM com.github.yadsendew.ShortestPathMatrix <init>
+INFO: Get shortest math matrix
+Feb 09, 2020 11:05:52 PM com.github.yadsendew.ShortestPathMatrix <init>
+INFO: Finish shortest path matrix
+Feb 09, 2020 11:05:52 PM com.github.yadsendew.MyLogger info
+INFO: Get shortest path from node 1 to 2
+Feb 09, 2020 11:05:52 PM com.github.yadsendew.GraphWriter exportToXML
+INFO: Writing to XML file
+Feb 09, 2020 11:05:52 PM com.github.yadsendew.Connectivity isConnected
 INFO: Find graph connectivity
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.DepthFirstSearch getDFSTree
-INFO: get DFS Tree from 0
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Diameter calculate
+Feb 09, 2020 11:05:52 PM com.github.yadsendew.DepthFirstSearch getDFSTree
+INFO: get DFS Tree from node 173
+Feb 09, 2020 11:05:52 PM com.github.yadsendew.Diameter calculate
 INFO: Find graph diameter
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 0
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 1
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 2
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 3
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 4
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 5
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 6
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 7
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 8
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 9
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 10
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 11
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 12
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 13
-Feb 09, 2020 10:48:13 PM com.github.yadsendew.Dijkstra getDijkstraTree
-INFO: get Dijkstra from 14
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print all attributes of the graph
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print the number of nodes
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print the number of edges
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print list of vertex IDs
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print list of edge IDs
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print the connectivity of the graph
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
-INFO: Print the diameter of the graph
-Feb 09, 2020 10:48:14 PM com.github.yadsendew.MyLogger info
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 0
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 1
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 2
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 3
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 4
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 5
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 6
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 7
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 8
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 9
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 10
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 11
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 12
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 13
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 14
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 15
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 16
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 17
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 18
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 19
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 20
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 21
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 22
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 23
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 24
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 25
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 26
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 27
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 28
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 29
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 30
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 31
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 32
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 33
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 34
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 35
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 36
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 37
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 38
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 39
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 40
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 41
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 42
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 43
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 44
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 45
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 46
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 47
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 48
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 49
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 50
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 51
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 52
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 53
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 54
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 55
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 56
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 57
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 58
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 59
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 60
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 61
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 62
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 63
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 64
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 65
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 66
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 67
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 68
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 69
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 70
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 71
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 72
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 73
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 74
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 75
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 76
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 77
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 78
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 79
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 80
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 81
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 82
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 83
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 84
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 85
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 86
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 87
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 88
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 89
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 90
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 91
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 92
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 93
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 94
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 95
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 96
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 97
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 98
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 99
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 100
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 101
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 102
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 103
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 104
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 105
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 106
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 107
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 108
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 109
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 110
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 111
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 112
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 113
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 114
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 115
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 116
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 117
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 118
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 119
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 120
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 121
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 122
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 123
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 124
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 125
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 126
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 127
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 128
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 129
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 130
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 131
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 132
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 133
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 134
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 135
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 136
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 137
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 138
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 139
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 140
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 141
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 142
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 143
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 144
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 145
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 146
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 147
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 148
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 149
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 150
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 151
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 152
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 153
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 154
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 155
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 156
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 157
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 158
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 159
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 160
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 161
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 162
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 163
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 164
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 165
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 166
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 167
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 168
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 169
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 170
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 171
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 172
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 173
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 174
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 175
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 176
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 177
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 178
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 179
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 180
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 181
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 182
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 183
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 184
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 185
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 186
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 187
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 188
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 189
+Feb 09, 2020 11:05:53 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 190
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 191
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 192
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 193
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 194
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 195
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 196
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 197
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 198
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 199
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 200
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 201
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 202
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 203
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 204
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 205
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 206
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 207
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 208
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 209
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 210
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 211
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 212
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 213
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 214
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 215
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 216
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 217
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 218
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 219
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 220
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 221
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 222
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 223
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 224
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 225
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 226
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 227
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 228
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 229
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 230
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 231
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 232
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 233
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 234
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 235
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 236
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 237
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 238
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 239
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 240
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 241
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 242
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 243
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 244
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 245
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 246
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 247
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 248
+Feb 09, 2020 11:05:54 PM com.github.yadsendew.BetweennessCentrality <init>
+INFO: Find betweenness centrality measurement of node 249
+Feb 09, 2020 11:05:55 PM com.github.yadsendew.MyLogger info
 INFO: Program end successfully.
 
 

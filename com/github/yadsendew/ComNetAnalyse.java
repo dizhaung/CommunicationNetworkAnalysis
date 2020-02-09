@@ -113,6 +113,8 @@ public class ComNetAnalyse {
 					String startId = task.get(1);
 					String endId = task.get(2);
 
+					LOGGER.info("Get shortest path from node " + startId + " to " + endId);
+
 					// get the list of shortest path then choose the 1st as the default path
 					ShortestPath shortestPathInfo = new ShortestPath(graph, startId, endId);
 

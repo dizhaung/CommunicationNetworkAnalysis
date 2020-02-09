@@ -4,16 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.logging.*;
-
 
 public class Dijkstra {
-
-	private final static Logger LOGGER = Logger.getLogger("MyLogger");
 	
     public static ArrayList<Object> getDijkstraTree(UndirectedWeightedGraph graph, String startNodeId) {
-
-		LOGGER.info("get Dijkstra from node " + startNodeId);
 
         UndirectedWeightedGraph dijkstraTree = new UndirectedWeightedGraph();
 		
