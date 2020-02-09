@@ -2,15 +2,23 @@ package com.github.yadsendew;
 
 import java.util.ArrayList;
 import java.util.Random;
+<<<<<<< HEAD
 import java.util.logging.*;
+=======
+import java.util.logging.Logger;
+>>>>>>> 597c7fd6a0b252db76866764342bbbd5cef676ca
 
 /**
  * The Class Connectivity represent the connectivity of the graph.
  */
 public class Connectivity {
+<<<<<<< HEAD
 
     final static Logger LOGGER = Logger.getLogger("PublicLogger"); 
     
+=======
+    private final static Logger LOGGER = Logger.getLogger("MyLogger");
+>>>>>>> 597c7fd6a0b252db76866764342bbbd5cef676ca
     /** Store the connectivity, return true if the graph is connected. */
     private boolean connectivity = false;
 
@@ -39,6 +47,7 @@ public class Connectivity {
 		String randNodeId = keys.get( rand.nextInt( keys.size() ));
 		
 		// DFSTree
+		LOGGER.info("getting DFS tree");
 		UndirectedWeightedGraph DFSTree = DepthFirstSearch.getDFSTree(graph, randNodeId);
 
 		// return true if the amount of node of the graph and DFSTree are the same

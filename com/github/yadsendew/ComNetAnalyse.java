@@ -16,25 +16,16 @@ import com.github.yadsendew.GraphParser;
 import com.github.yadsendew.GraphWriter;
 import com.github.yadsendew.ShortestPath;
 
-import java.io.IOException;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.logging.*;
+=======
+>>>>>>> 597c7fd6a0b252db76866764342bbbd5cef676ca
 
 public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
-		// setting up logger
-		final Logger LOGGER = Logger.getLogger("PublicLogger"); 
-		LOGGER.setUseParentHandlers(false);
-		Handler fileHandler;
-		try {
-			fileHandler = new FileHandler("logfile.log", true); 
-			LOGGER. addHandler ( fileHandler ); 
-			fileHandler.setFormatter(new SimpleFormatter()); 
-			fileHandler.setLevel(Level.ALL); 
-			throw new IOException();
-		} 
-		catch ( SecurityException | IOException e) {
-		}
+		// create new logger instance
+		MyLogger LOGGER = new MyLogger();
 		LOGGER.info("\n\n***************Program has started running...***************\n");
 		// analyse the arguments
 		Arguments myArgs = new Arguments();
@@ -62,6 +53,7 @@ public class ComNetAnalyse {
 			// get all attributes of the graph
 			LOGGER.info("Find number of nodes");
 			int nodeNum = graph.getTotalNodes();
+<<<<<<< HEAD
 
 			LOGGER.info("Find number of edges");
 			int edgeNum = graph.getTotalNodes();
@@ -73,6 +65,19 @@ public class ComNetAnalyse {
 			ArrayList<String> edgeIdList = graph.getEdgeId();
 
 			boolean connectivity = Connectivity.isConnected(graph);
+=======
+			LOGGER.info("Getting total number of nodes");
+			int edgeNum = graph.getTotalEdges();
+			LOGGER.info("Getting total number of edges");
+			ArrayList<String> nodeIdList = graph.getNodeId();
+			LOGGER.info("Getting list of node ID");
+			ArrayList<String> edgeIdList = graph.getEdgeId();
+			LOGGER.info("Getting list of edge ID");
+			boolean connectivity = Connectivity.isConnected(graph);
+			LOGGER.info("Getting connectivity of the graph");
+			double diameter = Diameter.calculate(graph);
+			LOGGER.info("Calculating diameter of the graph");
+>>>>>>> 597c7fd6a0b252db76866764342bbbd5cef676ca
 
 			double diameter = Diameter.calculate(graph);
 			
@@ -86,26 +91,33 @@ public class ComNetAnalyse {
 				e.printStackTrace();
 			}
 
-
+			
 			// Print all attributes of the graph if there are no task from the user
 			System.out.println("### Graph attributes ###");
+			LOGGER.info("Print all attributes of the graph");
 			// get number of node
+			
 			System.out.println("\t" + "Number of nodes: " + nodeNum);
+			LOGGER.info("Print the number of nodes");
 			
 			// get number of edge
 			System.out.println("\t" + "Number of edges: " + edgeNum);
+			LOGGER.info("Print the number of edges");
 			
 			// print all vertices's ID
 			System.out.println("\t" + "Vertex IDs: " + nodeIdList);
+			LOGGER.info("Print list of vertex IDs");
 			
 			// 3. print all edges's ID
 			System.out.println("\t" + "Edge IDs: " + edgeIdList);
-			
+			LOGGER.info("Print list of edge IDs");
+	
 			// check connectivity
 			System.out.println("\t" + "Graph is" + ( connectivity == true ? " " : "not ") + "connected");
-			
+			LOGGER.info("Print the connectivity of the graph");
 			// get diameter
 			System.out.println("\t" + "Gragh diameter: " + diameter);
+			LOGGER.info("Print the diameter of the graph");
 		}
 		else {
 			ExecutingThread thread = new ExecutingThread();
