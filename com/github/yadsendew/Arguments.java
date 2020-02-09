@@ -2,13 +2,15 @@ package com.github.yadsendew;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.logging.*;
 
 
 /**
  * The Class Arguments represents the input arguments.
  */
 public class Arguments {
-	private MyLogger LOGGER = new MyLogger(); 
+	private final Logger LOGGER = Logger.getLogger("MyLogger");
+
 	/** Store analysed task. */
 	private ArrayList<ArrayList<String>> taskAnalysed = new ArrayList<ArrayList<String>>();
 	
