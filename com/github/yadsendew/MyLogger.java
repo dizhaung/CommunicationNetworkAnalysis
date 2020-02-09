@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.logging.*;
 
 public class MyLogger {
-	final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+	final Logger LOGGER = Logger.getLogger("MyLogger"); 
 	MyLogger(){
 		LOGGER.setUseParentHandlers(false);
 		Handler fileHandler;

@@ -209,3 +209,19 @@ WARNING: The input file does not exist.
 Please make sure it is located at: "/Users/steven/Github/CommunicationNetworkAnalysis/resources/" folder.
 Feb 09, 2020 7:31:35 PM com.github.yadsendew.Arguments checkFileExistance
 INFO: Program has terminated.
+Feb 09, 2020 7:43:02 PM com.github.yadsendew.MyLogger info
+INFO: 
+
+***************Program has started running...***************
+
+Feb 09, 2020 7:43:02 PM com.github.yadsendew.MyLogger info
+INFO: Initialized "Arguments" class
+Feb 09, 2020 7:43:02 PM com.github.yadsendew.MyLogger info
+INFO: Checking empty argument...
+Feb 09, 2020 7:43:02 PM com.github.yadsendew.MyLogger info
+INFO: No empty argument passed.
+Feb 09, 2020 7:43:02 PM com.github.yadsendew.MyLogger warning
+WARNING: The input file does not exist. 
+Please make sure it is located at: "/Users/steven/Github/CommunicationNetworkAnalysis/resources/" folder.
+Feb 09, 2020 7:43:02 PM com.github.yadsendew.MyLogger info
+INFO: Program has terminated.
