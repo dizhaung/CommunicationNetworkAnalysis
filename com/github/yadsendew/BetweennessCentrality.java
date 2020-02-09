@@ -9,10 +9,10 @@ import java.util.ArrayList;
 public class BetweennessCentrality {
 	
 	/** Store the ID of the node. */
-	String nodeId;
+	private String nodeId;
 	
 	/** Store the betweenness centrality measure. */
-	double bcm;
+	private double bcm;
 	
 	
 	/**
@@ -49,8 +49,6 @@ public class BetweennessCentrality {
 				}
 				
 				// find the number and the list of shortest path between 1st and 2nd node
-				// System.out.println(startId + " " + endId);
-				// System.out.println(sMatrix.getShortestPath(startId, endId));
 				ShortestPath shortestPath = sMatrix.getShortestPath(startId, endId);
 				ArrayList<ArrayList<String>> pathList = shortestPath.getPathList();
 					

@@ -73,7 +73,6 @@ public class Dijkstra {
 				
 		}
 		
-		
 		return new ArrayList<Object>( Arrays.asList(dijkstraTree, distance) );
     }
 

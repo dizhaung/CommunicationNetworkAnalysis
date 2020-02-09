@@ -9,7 +9,7 @@ import java.util.Random;
 public class Connectivity {
     
     /** Store the connectivity, return true if the graph is connected. */
-    boolean connectivity = false;
+    private boolean connectivity = false;
 
     /**
      * Gets the connectivity.
