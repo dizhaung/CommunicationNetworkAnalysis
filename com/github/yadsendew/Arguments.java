@@ -2,13 +2,15 @@ package com.github.yadsendew;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.logging.*;
 
 
 /**
  * The Class Arguments represents the input arguments.
  */
 public class Arguments {
-	
+	private final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+
 	/** Store analysed task. */
 	private ArrayList<ArrayList<String>> taskAnalysed = new ArrayList<ArrayList<String>>();
 	
@@ -46,6 +48,7 @@ public class Arguments {
 		// if there is no argument, stop the program
 		if (taskArray.length == 0) {
 			System.out.println("There were no commandline arguments passed!");
+			LOGGER.warning("There were no commandline arguments passed!\nProgram has terminated");
 			System.exit(0);
 		}
 	}
@@ -62,9 +65,15 @@ public class Arguments {
 
 		// check if the file argument exist, exit if it is not found
 		if (!f.exists()) {
+			LOGGER.warning("The input file does not exist. \nPlease make sure it is located at: \"" +
+							System.getProperty("user.dir") + "/resources/\" folder.");
 			System.out.print("The input file does not exist. \nPlease make sure it is located at: \"");
 			System.out.println(System.getProperty("user.dir") + "/resources/\" folder.");
+
+			LOGGER.info("Program has terminated.");
 			System.exit(0);
+		} else {
+			LOGGER.info("Input file check existence: OK");
 		}
 	}
 
@@ -77,6 +86,7 @@ public class Arguments {
 	 */
 	private boolean analyseS(String[] taskArray, int index) {
 		// analyse -s, find the shortest path between 2 vertices
+		//LOGGER.
 		// -s needs 2 nodes
 		if (index == taskArray.length - 1 || taskArray[index + 1].charAt(0) == '-') {
 			// if -s is the last argument or the next is a task
@@ -148,7 +158,9 @@ public class Arguments {
 		// -a needs 1 file
 		if (index == taskArray.length - 1 || taskArray[index + 1].charAt(0) == '-') {
 			// if '-a' is the last argument or the next argument is a task
-			System.out.println("The task " + taskArray[index] + " has no argument. 1 are needed");
+			System.out.println("The task " + taskArray[index] + " has no argument. 1 are needed.");
+			LOGGER.warning("The task " + taskArray[index] + " has no argument. 1 are needed." + 
+						   "\nProgram has terminated.");
 			isInputValid = false;
 			return false;
 		} else {
@@ -184,14 +196,16 @@ public class Arguments {
 	 * @param taskArray stores input arguments
 	 */
 	public void analyse(String[] taskArray) {
+		LOGGER.info("Initialized \"Arguments\" class");
 		// check if the argument array is empty
+		LOGGER.info("Checking empty argument...");
 		checkEmptyArg(taskArray);
-
+		LOGGER.info("No empty argument passed.");
 		// check if the file argument exist before doing stuff
 		checkFileExistance(taskArray[0]);
 
-
-
+		// parse next arguments
+		LOGGER.info("Parsing next arguments...");
 		for (int index = 1; index < taskArray.length; index++) {
 			
 			if (taskArray[index].equals("-s")) { // task -s
@@ -214,9 +228,10 @@ public class Arguments {
 			}
 		} // end for loop
 
-		if (isInputValid == false) 
+		if (isInputValid == false){
+			LOGGER.warning("Input arguments is invalid. Program has terminated.");
 			System.exit(0);
-
-		
+		} 
+			
 	}
 }
