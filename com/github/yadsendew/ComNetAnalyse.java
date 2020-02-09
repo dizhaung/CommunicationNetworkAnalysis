@@ -15,11 +15,26 @@ package com.github.yadsendew;
 import com.github.yadsendew.GraphParser;
 import com.github.yadsendew.GraphWriter;
 import com.github.yadsendew.ShortestPath;
+
+import java.io.IOException;
 import java.util.ArrayList;
-
-public class Main {
+import java.util.logging.*;
+public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
-
+		// setting up logger
+		final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+		LOGGER.setUseParentHandlers(false);
+		Handler fileHandler;
+		try {
+			fileHandler = new FileHandler("logfile.log", true); 
+			LOGGER. addHandler ( fileHandler ); 
+			fileHandler.setFormatter(new SimpleFormatter()); 
+			fileHandler.setLevel(Level.ALL); 
+			throw new IOException();
+		} 
+		catch ( SecurityException | IOException e) {
+		}
+		LOGGER.info("\n\n***************Program has started running...***************\n");
 		// analyse the arguments
 		Arguments myArgs = new Arguments();
 		myArgs.analyse(args);
@@ -28,6 +43,7 @@ public class Main {
 		// Parse graphml to graph object
 		Thread a = new Thread(new ReadFileThread(myArgs.getFileName()));
 		a.start();
+		LOGGER.info("Parsing graph from input file");
 		UndirectedWeightedGraph graph = GraphParser.parse(path);
 		
 		a.interrupt();
