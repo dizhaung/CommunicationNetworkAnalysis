@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 
 /**
- * The Class Arguments.
+ * The Class Arguments represents the input arguments.
  */
 public class Arguments {
 	

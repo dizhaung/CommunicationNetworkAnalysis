@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- * The Class Node.
+ * The Class Node represents a node.
  */
 public class Node {
 	
-	/** Store the ID. */
+	/** Store the ID of the node. */
 	private String id;
 	
 	/** Store the neighbors of the node. */

@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * The Class ShortestPath.
+ * The Class ShortestPath finds the shortest path between 2 nodes of a graph.
  */
 public class ShortestPath {
 	
@@ -110,7 +110,7 @@ public class ShortestPath {
 	 * @param graph       the graph
 	 * @param startNodeId the ID of the start node
 	 * @param endNodeId   the ID of the end node
-	 * @throws NotFoundNodeException
+	 * @throws NotFoundNodeException if the node is not found
 	 */
 	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) throws NotFoundNodeException {
 		

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 /**
- * The Class Edge.
+ * The Class Edge represents an edge.
  */
 class Edge {
 

@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 
 /**
- * The Interface Graph.
+ * The Interface Graph represents a graph.
  */
 public interface Graph {
 	

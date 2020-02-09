@@ -23,7 +23,7 @@ public class ShortestPathMatrix {
 	 * Initialize a new shortest path matrix.
 	 *
 	 * @param graph the graph
-	 * @throws NotFoundNodeException
+	 * @throws NotFoundNodeException if the node is not found
 	 */
 	ShortestPathMatrix(UndirectedWeightedGraph graph) throws NotFoundNodeException {
 		shortestPathMatrix = new HashMap< String, HashMap< String, ShortestPath> >();

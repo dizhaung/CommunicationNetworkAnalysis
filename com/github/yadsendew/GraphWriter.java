@@ -28,7 +28,7 @@ public class GraphWriter {
        * @param graph   the graph to be written
        * @param pathIn  the input file name
        * @param pathOut the output file name
-       * @throws NotFoundNodeException
+       * @throws NotFoundNodeException if the node is not found
        */
       public static void exportToText(UndirectedWeightedGraph graph, String pathIn, String pathOut)
                   throws NotFoundNodeException {
@@ -204,10 +204,10 @@ public class GraphWriter {
       /**
        * Gets the element shortest path.
        *
-       * @param doc   the doc
+       * @param doc   the document
        * @param graph the graph
        * @return the element shortest path
-       * @throws NotFoundNodeException
+       * @throws NotFoundNodeException if the node is not found
        */
       private static Node getElementShortestPath(Document doc, UndirectedWeightedGraph graph)
                   throws NotFoundNodeException {
@@ -236,7 +236,7 @@ public class GraphWriter {
       /**
        * Gets the graph path element.
        *
-       * @param doc the doc
+       * @param doc the document
        * @param element the element
        * @param src the source
        * @param dst the destination
@@ -258,7 +258,7 @@ public class GraphWriter {
       /**
        * Gets the element total node.
        *
-       * @param doc the doc
+       * @param doc the document
        * @param graph the graph
        * @return the element total node
        */
@@ -271,7 +271,7 @@ public class GraphWriter {
       /**
        * Gets the element total edge.
        *
-       * @param doc the doc
+       * @param doc the document
        * @param graph the graph
        * @return the element total edge
        */
@@ -284,7 +284,7 @@ public class GraphWriter {
       /**
        * Gets the element connectivity.
        *
-       * @param doc the doc
+       * @param doc the document
        * @param graph the graph
        * @return the element connectivity
        */
@@ -315,7 +315,7 @@ public class GraphWriter {
        * @param doc   the document
        * @param graph the graph
        * @return the element Betweenness Centrality Measure
-       * @throws NotFoundNodeException
+       * @throws NotFoundNodeException if the node is not found
        */
       private static Node getElementBCM(Document doc, UndirectedWeightedGraph graph) throws NotFoundNodeException {
             Element bCentralityElement = doc.createElement("betweennessCentrality");

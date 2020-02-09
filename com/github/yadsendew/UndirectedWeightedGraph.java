@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 
 /**
- * The Class UndirectedWeightedGraph.
+ * The Class UndirectedWeightedGraph represents an undirected weighted graph.
  */
 public class UndirectedWeightedGraph implements Graph {
 	
@@ -51,7 +51,7 @@ public class UndirectedWeightedGraph implements Graph {
 	/**
 	 * Calculate shortest path matrix.
 	 * 
-	 * @throws NotFoundNodeException
+	 * @throws NotFoundNodeException if the node is not found
 	 */
 	public void calculateShortestPathMatrix() throws NotFoundNodeException {
 		shortestPathMatrix = new ShortestPathMatrix(this);
@@ -61,7 +61,7 @@ public class UndirectedWeightedGraph implements Graph {
 	 * Gets the shortest path matrix.
 	 *
 	 * @return the shortest path matrix
-	 * @throws NotFoundNodeException
+	 * @throws NotFoundNodeException if the node is not found
 	 */
 	public ShortestPathMatrix getShortestPathMatrix() throws NotFoundNodeException {
 		if (shortestPathMatrix == null){

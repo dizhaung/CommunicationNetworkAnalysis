@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.HashMap;
 
 /**
- * The Class Diameter.
+ * The Class Diameter represent the diameter of the graph.
  */
 public class Diameter {
     

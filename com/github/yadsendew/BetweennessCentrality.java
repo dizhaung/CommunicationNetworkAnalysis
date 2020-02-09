@@ -20,7 +20,7 @@ public class BetweennessCentrality {
 	 *
 	 * @param graph  the graph
 	 * @param nodeId the ID of the node
-	 * @throws NotFoundNodeException
+	 * @throws NotFoundNodeException if the node is not found
 	 */
 	BetweennessCentrality(UndirectedWeightedGraph graph, String nodeId) throws NotFoundNodeException {
 

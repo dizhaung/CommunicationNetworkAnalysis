@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * The Class Connectivity.
+ * The Class Connectivity represent the connectivity of the graph.
  */
 public class Connectivity {
     
