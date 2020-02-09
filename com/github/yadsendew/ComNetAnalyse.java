@@ -16,9 +16,8 @@ import com.github.yadsendew.GraphParser;
 import com.github.yadsendew.GraphWriter;
 import com.github.yadsendew.ShortestPath;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.*;
+
 public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
 		// create new logger instance
