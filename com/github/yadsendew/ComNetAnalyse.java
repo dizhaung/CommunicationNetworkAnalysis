@@ -21,19 +21,8 @@ import java.util.ArrayList;
 import java.util.logging.*;
 public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
-		// setting up logger
-		final Logger LOGGER = Logger.getLogger("PublicLogger"); 
-		LOGGER.setUseParentHandlers(false);
-		Handler fileHandler;
-		try {
-			fileHandler = new FileHandler("logfile.log", true); 
-			LOGGER. addHandler ( fileHandler ); 
-			fileHandler.setFormatter(new SimpleFormatter()); 
-			fileHandler.setLevel(Level.ALL); 
-			throw new IOException();
-		} 
-		catch ( SecurityException | IOException e) {
-		}
+		// create new logger instance
+		MyLogger LOGGER = new MyLogger();
 		LOGGER.info("\n\n***************Program has started running...***************\n");
 		// analyse the arguments
 		Arguments myArgs = new Arguments();
