@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,7 +22,7 @@ import org.w3c.dom.Node;
  * The Class GraphWriter writes all graph properties.
  */
 public class GraphWriter {
-      
+		private final static Logger LOGGER = Logger.getLogger("MyLogger");
       /**
        * Export to text file.
        *
@@ -35,8 +36,9 @@ public class GraphWriter {
             try {
                   FileWriter myWriter = new FileWriter(pathOut);
                   myWriter.write("Read in file: \'" + pathIn + "\'\n");
+                  LOGGER.info("Writing to file:" + pathOut);
                   myWriter.write("### Graph information ### \n");
-                  
+                  LOGGER.info("Writing graph infomation to the file");
                   // get number of node
                   myWriter.write("\t" + "Number of nodes: " + graph.getTotalNodes()+ '\n');
                   // get number of edge
@@ -50,7 +52,8 @@ public class GraphWriter {
                   // get diameter
                   myWriter.write("\t" + "Graph diameter: " + Diameter.calculate(graph) + '\n');
                   
-                  myWriter.write("### Shortest paths ###\n");					
+                  myWriter.write("### Shortest paths ###\n");		
+                  LOGGER.info("Writing all shortest paths of the graph");
                   ArrayList<String> allNodeIdList = graph.getNodeId();
                   int totalNodes = allNodeIdList.size();
                   for (int i = 0; i < totalNodes; i++){ // from start node
@@ -71,15 +74,16 @@ public class GraphWriter {
                         }
                   }
                   myWriter.write("### Betweenness centrality ###\n");
+                  LOGGER.info("Writing betweenness centrality...");
                   for (String nodeId : allNodeIdList){ // from for each node
                         myWriter.write("\tNode \'"+ nodeId +"\': ");
                         BetweennessCentrality bCentrality = new BetweennessCentrality(graph, nodeId);
                         myWriter.write(bCentrality.getBCM() + "\n");
                   }
                   myWriter.close();
-                  // System.out.println("\nExported with file name: " + pathOut);
+                  
             } catch (IOException e) {
-                  System.out.println("An error occurred.");
+                  LOGGER.info("An error occurred.");
                   e.printStackTrace();
             }   
       }
@@ -98,6 +102,7 @@ public class GraphWriter {
             try {
                   icBuilder = icFactory.newDocumentBuilder();
                   Document doc = icBuilder.newDocument();
+                  LOGGER.info("Writing to XML file");
                   Element graphMLElement = doc.createElementNS("http://graphml.graphdrawing.org/xmlns", "graphml");
                   doc.appendChild(graphMLElement);
                   Element key = doc.createElement("key");
@@ -165,7 +170,7 @@ public class GraphWriter {
       /**
        * Adds the element node.
        *
-       * @param doc the doc
+       * @param doc the document
        * @param graphElement the graph element
        * @param nodeId the node id
        */
@@ -182,7 +187,7 @@ public class GraphWriter {
       /**
        * Adds the element edge.
        *
-       * @param doc the doc
+       * @param doc the document
        * @param graphElement the graph element
        * @param edge the edge
        */

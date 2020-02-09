@@ -4,6 +4,8 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 import java.io.File;
+import java.util.logging.Logger;
+
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
@@ -11,7 +13,7 @@ import javax.xml.parsers.SAXParserFactory;
  * The Class GraphParser.
  */
 public class GraphParser extends DefaultHandler {
-   
+   private final Logger LOGGER = Logger.getLogger("MyLogger");
    /** Return true if current reading element is a node element. */
    private boolean bNodeKey = false;
    
@@ -45,6 +47,7 @@ public class GraphParser extends DefaultHandler {
     * @param path input file name
     * @return the undirected weighted graph
     */
+
    public static UndirectedWeightedGraph parse(String path) {
       try {
          File inputFile = new File(path);
@@ -104,12 +107,14 @@ public class GraphParser extends DefaultHandler {
    String localName, String qName) throws SAXException {
       if (qName.equalsIgnoreCase("node")) {
          Node newNode = new Node(newNodeId);
+         LOGGER.info("Added node:" + newNodeId);
          undirectedWeightedGraph.addNode(newNode);
       }
       if (qName.equalsIgnoreCase("edge")) {
          // add edge
          Edge newEdge = new Edge(newEdgeId, newEdgeSrc, newEdgeDst, newEdgeWeight);
          undirectedWeightedGraph.addEdge(newEdge);
+         LOGGER.info("Added edge:" + newEdgeId);
       }
    }
 
