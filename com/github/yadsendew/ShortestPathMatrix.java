@@ -10,7 +10,7 @@ import java.util.logging.*;
  */
 public class ShortestPathMatrix {
 
-	final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+	final Logger LOGGER = Logger.getLogger("MyLogger"); 
 	
 	/** Store shortest path matrix. */
 	private HashMap< String, HashMap< String, ShortestPath>> shortestPathMatrix;

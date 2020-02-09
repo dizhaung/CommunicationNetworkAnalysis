@@ -7,7 +7,7 @@ import java.util.logging.*;
  */
 public class NotFoundNodeException extends Exception {
 
-    final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+    final Logger LOGGER = Logger.getLogger("MyLogger"); 
 
     /** The Constant serialVersionUID. */
     private static final long serialVersionUID = 1L;

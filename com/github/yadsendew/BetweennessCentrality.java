@@ -8,7 +8,7 @@ import java.util.logging.*;
  */
 public class BetweennessCentrality {
 
-	final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+	private final Logger LOGGER = Logger.getLogger("MyLogger"); 
 	
 	/** Store the ID of the node. */
 	private String nodeId;

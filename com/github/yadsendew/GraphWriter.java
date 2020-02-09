@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -22,7 +22,9 @@ import org.w3c.dom.Node;
  * The Class GraphWriter writes all graph properties.
  */
 public class GraphWriter {
-		private final static Logger LOGGER = Logger.getLogger("MyLogger");
+            
+      private final static Logger LOGGER = Logger.getLogger("MyLogger");
+      
       /**
        * Export to text file.
        *

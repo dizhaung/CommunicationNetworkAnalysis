@@ -11,7 +11,7 @@ import java.util.logging.*;
  */
 public class ShortestPath {
 
-	private final Logger LOGGER = Logger.getLogger("PublicLogger"); 
+	private final Logger LOGGER = Logger.getLogger("MyLogger"); 
 	
 	/** Store the source of the edge. */
 	private String src;

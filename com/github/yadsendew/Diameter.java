@@ -10,7 +10,7 @@ import java.util.logging.*;
  */
 public class Diameter {
 
-	final static Logger LOGGER = Logger.getLogger("PublicLogger"); 
+	final static Logger LOGGER = Logger.getLogger("MyLogger"); 
     
     /** Store the diameter of the graph. */
     private double diameter;

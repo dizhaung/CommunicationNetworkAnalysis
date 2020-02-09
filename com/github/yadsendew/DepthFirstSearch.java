@@ -1,10 +1,15 @@
 package com.github.yadsendew;
 
 import java.util.ArrayList;
+import java.util.logging.*;
 
 public class DepthFirstSearch {
+
+	private final static Logger LOGGER = Logger.getLogger("MyLogger");
     
     public static UndirectedWeightedGraph getDFSTree(UndirectedWeightedGraph graph, String startNodeId) {
+
+		LOGGER.info("get DFS Tree from " + startNodeId);
 
         UndirectedWeightedGraph DFSTree = new UndirectedWeightedGraph();
 

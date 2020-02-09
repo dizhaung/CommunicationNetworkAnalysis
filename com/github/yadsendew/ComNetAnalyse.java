@@ -17,10 +17,6 @@ import com.github.yadsendew.GraphWriter;
 import com.github.yadsendew.ShortestPath;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-import java.util.logging.*;
-=======
->>>>>>> 597c7fd6a0b252db76866764342bbbd5cef676ca
 
 public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
@@ -53,7 +49,6 @@ public class ComNetAnalyse {
 			// get all attributes of the graph
 			LOGGER.info("Find number of nodes");
 			int nodeNum = graph.getTotalNodes();
-<<<<<<< HEAD
 
 			LOGGER.info("Find number of edges");
 			int edgeNum = graph.getTotalNodes();
@@ -65,19 +60,6 @@ public class ComNetAnalyse {
 			ArrayList<String> edgeIdList = graph.getEdgeId();
 
 			boolean connectivity = Connectivity.isConnected(graph);
-=======
-			LOGGER.info("Getting total number of nodes");
-			int edgeNum = graph.getTotalEdges();
-			LOGGER.info("Getting total number of edges");
-			ArrayList<String> nodeIdList = graph.getNodeId();
-			LOGGER.info("Getting list of node ID");
-			ArrayList<String> edgeIdList = graph.getEdgeId();
-			LOGGER.info("Getting list of edge ID");
-			boolean connectivity = Connectivity.isConnected(graph);
-			LOGGER.info("Getting connectivity of the graph");
-			double diameter = Diameter.calculate(graph);
-			LOGGER.info("Calculating diameter of the graph");
->>>>>>> 597c7fd6a0b252db76866764342bbbd5cef676ca
 
 			double diameter = Diameter.calculate(graph);
 			
