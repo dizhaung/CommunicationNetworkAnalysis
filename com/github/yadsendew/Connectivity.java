@@ -2,11 +2,14 @@ package com.github.yadsendew;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.logging.*;
 
 /**
  * The Class Connectivity represent the connectivity of the graph.
  */
 public class Connectivity {
+
+    final static Logger LOGGER = Logger.getLogger("PublicLogger"); 
     
     /** Store the connectivity, return true if the graph is connected. */
     private boolean connectivity = false;
@@ -27,6 +30,8 @@ public class Connectivity {
      * @return true, if the graph is connected
      */
     public static boolean isConnected (UndirectedWeightedGraph graph) {
+        LOGGER.info("Find graph connectivity");
+
         // create a DFSTree from the graph to check graph connectivity
 		// choose a random node
 		Random rand = new Random();

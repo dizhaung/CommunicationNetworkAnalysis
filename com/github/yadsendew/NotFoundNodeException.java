@@ -1,9 +1,13 @@
 package com.github.yadsendew;
 
+import java.util.logging.*;
+
 /**
  * The Class NotFoundNodeException throw exception if the node is not found.
  */
 public class NotFoundNodeException extends Exception {
+
+    final Logger LOGGER = Logger.getLogger("PublicLogger"); 
 
     /** The Constant serialVersionUID. */
     private static final long serialVersionUID = 1L;
@@ -29,7 +33,8 @@ public class NotFoundNodeException extends Exception {
      * @param nodeId the ID of the node
      */
     NotFoundNodeException(UndirectedWeightedGraph graph, String nodeId) {
-        System.out.println("\nNode '" + nodeId + "' does not exist in the graph.");
+        System.out.println("\nNode '" + nodeId + "' does not exist in the graph");
+        LOGGER.warning("Node '" + nodeId + "' does not exist in the graph\nProgram has terminated\n\n");
         System.exit(0);
     } 
 

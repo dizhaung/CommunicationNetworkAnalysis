@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.logging.*;
 
 /**
  * The Class ShortestPath finds the shortest path between 2 nodes of a graph.
  */
 public class ShortestPath {
+
+	private final Logger LOGGER = Logger.getLogger("PublicLogger"); 
 	
 	/** Store the source of the edge. */
 	private String src;
@@ -113,6 +116,8 @@ public class ShortestPath {
 	 * @throws NotFoundNodeException if the node is not found
 	 */
 	ShortestPath(UndirectedWeightedGraph graph, String startNodeId, String endNodeId) throws NotFoundNodeException {
+
+		LOGGER.info("Find shortest path from node " + startNodeId + " to node " + endNodeId);
 		
 		if (!graph.containsNode(startNodeId)) {
 			throw new NotFoundNodeException(graph, startNodeId);

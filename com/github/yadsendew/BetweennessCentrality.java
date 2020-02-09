@@ -1,12 +1,14 @@
 package com.github.yadsendew;
 
 import java.util.ArrayList;
-
+import java.util.logging.*;
 
 /**
  * The Class BetweennessCentrality calculate the betweenness centrality of the node of the graph.
  */
 public class BetweennessCentrality {
+
+	final Logger LOGGER = Logger.getLogger("PublicLogger"); 
 	
 	/** Store the ID of the node. */
 	private String nodeId;
@@ -24,6 +26,7 @@ public class BetweennessCentrality {
 	 */
 	BetweennessCentrality(UndirectedWeightedGraph graph, String nodeId) throws NotFoundNodeException {
 
+		LOGGER.info("Find betweenness centrality measurement of node " + nodeId);
 		this.nodeId = nodeId;
 
 		if (!graph.containsNode(nodeId)) {

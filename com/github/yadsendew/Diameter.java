@@ -3,11 +3,14 @@ package com.github.yadsendew;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HashMap;
+import java.util.logging.*;
 
 /**
  * The Class Diameter represent the diameter of the graph.
  */
 public class Diameter {
+
+	final static Logger LOGGER = Logger.getLogger("PublicLogger"); 
     
     /** Store the diameter of the graph. */
     private double diameter;
@@ -19,6 +22,9 @@ public class Diameter {
      * @return the diameter
      */
     public static double calculate(UndirectedWeightedGraph graph) {
+
+		LOGGER.info("Find graph diameter");
+
         // make a copy of the graph
 		UndirectedWeightedGraph copyGraph = new UndirectedWeightedGraph(graph);
 		

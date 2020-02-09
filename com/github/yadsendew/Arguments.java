@@ -48,7 +48,7 @@ public class Arguments {
 		// if there is no argument, stop the program
 		if (taskArray.length == 0) {
 			System.out.println("There were no commandline arguments passed!");
-			LOGGER.warning("There were no commandline arguments passed!\nProgram has terminated");
+			LOGGER.warning("There were no commandline arguments passed!\nProgram has terminated\n\n");
 			System.exit(0);
 		}
 	}
@@ -70,7 +70,7 @@ public class Arguments {
 			System.out.print("The input file does not exist. \nPlease make sure it is located at: \"");
 			System.out.println(System.getProperty("user.dir") + "/resources/\" folder.");
 
-			LOGGER.info("Program has terminated.");
+			LOGGER.info("Program has terminated.\n\n");
 			System.exit(0);
 		} else {
 			LOGGER.info("Input file check existence: OK");
@@ -160,7 +160,7 @@ public class Arguments {
 			// if '-a' is the last argument or the next argument is a task
 			System.out.println("The task " + taskArray[index] + " has no argument. 1 are needed.");
 			LOGGER.warning("The task " + taskArray[index] + " has no argument. 1 are needed." + 
-						   "\nProgram has terminated.");
+						   "\nProgram has terminated.\n\n");
 			isInputValid = false;
 			return false;
 		} else {
@@ -229,7 +229,7 @@ public class Arguments {
 		} // end for loop
 
 		if (isInputValid == false){
-			LOGGER.warning("Input arguments is invalid. Program has terminated.");
+			LOGGER.warning("Input arguments is invalid.\nProgram has terminated.\n\n");
 			System.exit(0);
 		} 
 			

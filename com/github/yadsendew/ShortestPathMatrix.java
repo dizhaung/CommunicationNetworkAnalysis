@@ -3,11 +3,14 @@ package com.github.yadsendew;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.logging.*;
 
 /**
  * The Class ShortestPathMatrix stores all shortest paths of the graph.
  */
 public class ShortestPathMatrix {
+
+	final Logger LOGGER = Logger.getLogger("PublicLogger"); 
 	
 	/** Store shortest path matrix. */
 	private HashMap< String, HashMap< String, ShortestPath>> shortestPathMatrix;
@@ -26,6 +29,9 @@ public class ShortestPathMatrix {
 	 * @throws NotFoundNodeException if the node is not found
 	 */
 	ShortestPathMatrix(UndirectedWeightedGraph graph) throws NotFoundNodeException {
+
+		LOGGER.info("Get shortest math matrix");
+
 		shortestPathMatrix = new HashMap< String, HashMap< String, ShortestPath> >();
 		
 		ArrayList<String> nodeArrayList = new ArrayList<String>( graph.getNodeList().keySet() );
@@ -71,6 +77,8 @@ public class ShortestPathMatrix {
 			} 	// END LOOP
 			
 		}	// END LOOP
+
+		LOGGER.info("Finish shortest path matrix");
 	}
 	
     /**

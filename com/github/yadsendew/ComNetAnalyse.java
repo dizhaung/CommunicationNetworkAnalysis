@@ -19,6 +19,7 @@ import com.github.yadsendew.ShortestPath;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.*;
+
 public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
 		// setting up logger
@@ -59,13 +60,23 @@ public class ComNetAnalyse {
 			thread.start();
 
 			// get all attributes of the graph
+			LOGGER.info("Find number of nodes");
 			int nodeNum = graph.getTotalNodes();
-			int edgeNum = graph.getTotalNodes();
-			ArrayList<String> nodeIdList = graph.getNodeId();
-			ArrayList<String> edgeIdList = graph.getEdgeId();
-			boolean connectivity = Connectivity.isConnected(graph);
-			double diameter = Diameter.calculate(graph);
 
+			LOGGER.info("Find number of edges");
+			int edgeNum = graph.getTotalNodes();
+
+			LOGGER.info("Find all node id");
+			ArrayList<String> nodeIdList = graph.getNodeId();
+
+			LOGGER.info("Find all edge id");
+			ArrayList<String> edgeIdList = graph.getEdgeId();
+
+			boolean connectivity = Connectivity.isConnected(graph);
+
+			double diameter = Diameter.calculate(graph);
+			
+			// interrupt the thread
 			thread.interrupt();
 			a.interrupt();
 			try {	// wait for the interrupt finish
@@ -187,6 +198,8 @@ public class ComNetAnalyse {
 				}
 			}
 		}	// end for loop 
+
+		LOGGER.info("Program end successfully.\n\n");
 		
 	}
 	
