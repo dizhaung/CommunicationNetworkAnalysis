@@ -17,7 +17,7 @@ import com.github.yadsendew.GraphWriter;
 import com.github.yadsendew.ShortestPath;
 import java.util.ArrayList;
 
-public class Main {
+public class ComNetAnalyse {
 	public static void main(String[] args) throws NotFoundNodeException {
 
 		// analyse the arguments
