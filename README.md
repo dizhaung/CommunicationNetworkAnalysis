@@ -11,5 +11,5 @@ Please read documentation to install and run the program.
 
 1. Mr. Ngo Minh Thong
 2. Ms. Nguyen Quynh Huong
-3. Mr. Tran Huu Le Huy Huy
+3. Mr. Tran Huu Le Huy
 4. Mr. Luu Nguyen Phat
